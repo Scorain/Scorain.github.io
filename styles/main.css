@@ -1,0 +1,768 @@
+﻿
+
+* {
+	margin:0px;
+	padding:0px;
+}
+a {
+	text-decoration:none;
+	color:black;
+}
+.pc {
+	width:100%;
+}
+.mobile {
+	display:none;
+}
+.pc_top, .mobile_top {
+	width:90%;
+	margin:0 auto;	
+	height:50px;	
+}
+.pc_top>h1, .mobile_top>h3 {
+	margin:0px;
+	display:inline-block;
+	line-height:50px;
+	font-family:华文行楷;
+	color:green;
+}
+.pc_top>ul, .mobile_top>ul {
+	float:right;
+	list-style:none;
+}
+.pc_top>ul>li, .mobile_top>ul>li {
+	float:left;
+	display:inline-block;
+	line-height:50px;
+	margin-left:20px;
+}
+.pc_top>ul>li>a {
+	color:blue;
+}
+#research_icon {
+	width:18px;
+	height:18px;	
+}
+#menu_icon {
+	width:20px;
+	height:17px;
+}
+#mobile_Banner {
+	background-image:url("../images/mobile_banner.jpg");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+#search_box {
+	width:60%;
+	margin:0 auto;
+	padding-top:10%;
+	overflow:hidden;
+	display:none;
+}
+#menu_Container {
+	display:inline-block;
+	float:right;
+	background-color:black;
+}
+#wechat_code>img {
+	width:15%;
+	position:absolute;
+	top:50px;
+	left:80%;
+	z-index:9;
+}
+.cross_line {
+	width:100%;
+	height:52px;
+	background-color:grey;
+}
+.pc_bottom {
+	width:90%;
+	margin:0 auto;	
+	height:50px;	
+}
+.pc_bottom>ul {
+	width:100%;
+	float:left;
+	list-style:none;
+}
+.pc_bottom>ul>li {
+	float:left;
+	display:inline-block;
+	line-height:49px;
+	margin-right:30px;
+}
+#step_trigger {
+	font-size:20px;
+}
+#search {
+	float:right;
+}
+.my_travellog {
+	width:90%;
+	margin:0px auto;
+}
+ .travel_place {
+	margin-top:20px;
+	width:100%;
+    diaplay:block;	
+} 
+.travel_place>p {
+	display:inline-block;
+	font-size:20px;
+    margin-right:15px;
+	float:left;
+}
+.travel_place>div {
+ 	width:60%;
+	float:left;
+}
+.inner_list {
+	list-style:none;
+}
+.inner_list>li {
+	float:left;
+	margin-right:20px;
+	font-size:18px;
+	font-style:oblique;	
+}
+.map_china {
+    float:right;
+	height:95%;
+    position:relative;
+	top:-45%;
+	right:10%;
+}
+.banner {
+	width:100%;
+ 	height:500px; 
+	margin:0 auto;
+    overflow:hidden;	  
+}
+#unorder {
+	margin:0px;
+	padding:0px;
+	width:100%;
+ 	height:100%;
+	list-style:none;
+    overflow:hidden;	
+}
+#unorder>li {
+	width:100%;
+	height:100%;
+}
+.container {
+	width:100%;
+	height:100%;
+}
+.container_one {
+	background-image:url("../images/pic_one.jpg");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+
+.container_two {
+	background-image:url("../images/pic_two.jpg");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+.container_three {
+	background-image:url("../images/pic_three.jpg");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+#prevArrow {
+	position:relative;
+	top:-60%;
+	float:left;
+	margin-left:5%;
+}
+#nextArrow {
+	position:relative;
+	top:-60%;
+	float:right;
+	margin-right:5%;	
+}
+#btnOn {
+    list-style:none;	
+	position:relative;
+	top:-12%;
+	left:35%;
+}
+#btnOn>li {
+	margin-left:20px;
+	padding:0px;
+	float:left;
+}
+#btnOn>li>img {
+	width:10px;
+	height:10px;
+}
+.where_arrivated, .when_graduated, .who_isme {
+	width:90%;
+	margin:0 auto;
+}
+.where_select, .message_graduated, .message_myself {
+	width:100%;
+	height:50px;
+	overflow:hidden;
+}
+.leftline {
+	width:40%;
+	margin-top:24px;
+	float:left;
+	outline:1px solid green;
+}
+.rightline {
+	width:40%;
+	margin-top:24px;
+	float:right;
+	outline:1px solid green;
+}
+.tipcontent {
+	display:inline-block;
+	line-height:50px;
+	width:20%;
+	float:left;
+}
+.tipcontent>p {
+	text-align:center;
+	color:green;
+	font-size:24px;
+}
+.content_tag {
+	display:inline-block;
+	width:120px;
+	height:50px;
+	float:left;
+	background-color:grey;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.content_tag>p {
+	display:inline-block;
+	line-height:50px;
+	font-family:幼圆;
+	font-size:20px;
+	color:white;	
+}
+.where_select>ul {
+	list-style:none;
+	display:inline-block;
+	float:left;
+	width:300px;
+	margin-left:20px;
+}
+.where_select>ul>li {
+	display:inline-block;
+	line-height:50px;
+	font-size:18px;
+	width:300px;
+}
+#where_listone>ul {
+	list-style:none;
+}
+.list_container {
+	width:33.3%;
+	float:left;
+}
+.list_container>img {
+	width:98%;
+	float:left;	
+}
+.content_text {
+	display:inline-block;
+	line-height:50px;
+	float:left;
+	margin-left:20px;
+	font-size:18px;
+}
+#little_moive {
+	width:90%;
+	margin:0px auto;
+    background-image:url(../images/moive_pic.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;	
+}
+#little_moive>video {
+	visibility:hidden;
+}
+.resume_content {
+	width:100%;
+	height:300px;
+	margin-top:30px;
+	border-bottom:1px dashed grey;
+}
+.short_intro {
+	width:40%;
+	margin:30px 5%;
+	display:inline-block;
+    float:left;
+}
+.short_intro>p {
+	text-indent:2em;
+	font-family:幼圆;
+	font-size:20px;
+}
+.my_photo {
+	width:20%;
+	margin:30px 15%;
+	float:right;
+	border-radius:20px;
+}
+.my_photo>img {
+	width:100%;
+	height:100%;
+}
+.resume_text {
+	width:40%;
+	margin:3% 5%;
+	display:inline-block;
+    float:right;
+}
+.resume_text>ul {
+	list-style:none;
+}
+.resume_text>ul>li {
+	font-family:幼圆;
+	font-size:20px;
+}
+.resume_photo {
+	width:20%;
+	margin:30px 15%;
+	float:left;
+	border-radius:20px;
+}
+.resume_photo>img {
+	width:100%;
+	height:100%;
+}
+.main_container {
+	background-image:url("../images/back_container.jpg");
+	background-size:100% 100%;
+}
+.footer_part {
+	width:100%;
+	height:180px;
+	background-color:grey;
+}
+.footer_part ul {
+	list-style:none;
+}
+.footer_part>ul {
+	width:90%;
+	margin:0 auto;
+}
+.footer_part>ul>li {
+	float:left;
+}
+.contact_me {
+	width:200px;
+	height:120px;
+	margin-right:50px;
+	padding-top:20px;
+	color:white;
+	font-family:幼圆;
+}
+.contact_me a {
+	color:white;
+	font-family:幼圆;
+}
+.signature {
+	display:block;
+	margin:10px auto;
+	width:400px;
+	height:40px;
+	font-size:20px;
+	color:white;
+}
+
+#years, #skills, #tomyself {
+	width:80%;
+	height:80%;
+	margin:0 auto;
+	padding-top:2%;
+}
+#years ul {
+	list-style:none;
+	width:100%;
+}
+#years li {
+	width:20%;
+	height:45%;
+	float:left;
+	margin-left:10%;
+	overflow:hidden;
+    border-radius:50%;	
+}
+#years div {
+	width:100%;
+	margin-top:30%;
+}
+/* 年份字体显示效果CSS3动画样式 */
+#years h1 {
+	display:inline-block;
+	float:left;
+	line-height:30px;
+	width:15%;
+	margin-left:15.5%;
+	font-weight:5px;
+	color:white;
+	animation:fontShow 5s;
+	-moz-animation:fontShow 5s;
+	-webkit-animation:fontShow 5s;
+	-o-animation:fontShow 5s;
+}
+@keyframes fontShow {
+	0% {transform:skew(90deg,0deg);}
+	80% {transform:skew(90deg,0deg);}
+	100% {transform:skew(0deg,0deg);}
+}
+@-moz-keyframes fontShow {
+	0% {transform:skew(90deg,0deg);}
+	80% {transform:skew(90deg,0deg);}
+	100% {transform:skew(0deg,0deg);}
+}
+@-webkit-keyframes fontShow {
+	0% {transform:skew(90deg,0deg);}
+	80% {transform:skew(90deg,0deg);}
+	100% {transform:skew(0deg,0deg);}
+}
+@-o-keyframes fontShow {
+	0% {transform:skew(90deg,0deg);}
+	80% {transform:skew(90deg,0deg);}
+	100% {transform:skew(0deg,0deg);}
+}
+/* 照片显示效果CSS3动画样式 */
+#year_13 {
+	animation:showupo 3s;
+	-moz-animation:showupo 3s;
+	-webkit-animation:showupo 3s;
+	-o-animation:showupo 3s;
+}
+@keyframes showupo{
+	0% {width:0%;opacity:0;}
+	50% {width:20%;opacity:1;}
+	75% {width:20%;opacity:1;}
+	100% {width:20%;opacity:1;}
+}
+@-moz-keyframes showupo{
+	0% {width:0%;opacity:0;}
+	50% {width:20%;opacity:1;}
+	75% {width:20%;opacity:1;}
+	100% {width:20%;opacity:1;}
+}
+@-webkit-keyframes showupo{
+	0% {width:0%;opacity:0;}
+	50% {width:20%;opacity:1;}
+	75% {width:20%;opacity:1;}
+	100% {width:20%;opacity:1;}
+}
+@-o-keyframes showupo{
+	0% {width:0%;opacity:0;}
+	50% {width:20%;opacity:1;}
+	75% {width:20%;opacity:1;}
+	100% {width:20%;opacity:1;}
+}
+#year_14 {
+	animation:showupt 3s;
+	-moz-animation:showupt 3s;
+	-webkit-animation:showupt 3s;
+	-o-animation:showupt 3s;
+}
+@keyframes showupt{
+	0% {width:0%;opacity:0;}
+	50% {width:0%;opacity:0;}
+	75% {width:20%;opacity:1;}
+	100% {width:20%;opacity:1;}
+}
+@-moz-keyframes showupt{
+	0% {width:0%;opacity:0;}
+	50% {width:0%;opacity:0;}
+	75% {width:20%;opacity:1;}
+	100% {width:20%;opacity:1;}
+}
+@-webkit-keyframes showupt{
+	0% {width:0%;opacity:0;}
+	50% {width:0%;opacity:0;}
+	75% {width:20%;opacity:1;}
+	100% {width:20%;opacity:1;}
+}
+@-o-keyframes showupt{
+	0% {width:0%;opacity:0;}
+	50% {width:0%;opacity:0;}
+	75% {width:20%;opacity:1;}
+	100% {width:20%;opacity:1;}
+}
+#year_15 {
+	animation:showupth 3s;
+	-moz-animation:showupth 3s;
+	-webkit-animation:showupth 3s;
+	-o-animation:showupth 3s;
+}
+@keyframes showupth{
+	0% {width:0%;opacity:0;}
+	50% {width:0%;opacity:0;}
+	75% {width:0%;opacity:0;}
+	100% {width:20%;opacity:1;}
+}
+@-moz-keyframes showupth{
+	0% {width:0%;opacity:0;}
+	50% {width:0%;opacity:0;}
+	75% {width:0%;opacity:0;}
+	100% {width:20%;opacity:1;}
+}
+@-webkit-keyframes showupth{
+	0% {width:0%;opacity:0;}
+	50% {width:0%;opacity:0;}
+	75% {width:0%;opacity:0;}
+	100% {width:20%;opacity:1;}
+}
+@-o-keyframes showupth{
+	0% {width:0%;opacity:0;}
+	50% {width:0%;opacity:0;}
+	75% {width:0%;opacity:0;}
+	100% {width:20%;opacity:1;}
+}
+#years img {
+	width:100%;	
+}
+/* 技能旋转动画效果CSS3动画样式 */
+#skills ul {
+	list-style:none;
+	height:300px;
+	width:300px;
+	float:right;
+	margin:5%;
+	transform-origin:50% 50%;
+	animation:skillCycle 5s linear infinite;
+	-moz-animation:skillCycle 5s linear infinite;
+	-webkit-animation:skillCycle 5s linear infinite;
+	-o-animation:skillCycle 5s linear infinite;
+	
+}
+@keyframes skillCycle {
+	0% {transform:rotate(0deg);opacity:0}
+	25% {transform:rotate(120deg);opacity:0.7}
+	75% {transform:rotate(240deg);opacity:0.7}
+	100% {transform:rotate(360deg);opacity:0}
+}
+@-moz-keyframes skillCycle {
+	0% {transform:rotate(0deg);opacity:0}
+	25% {transform:rotate(120deg);opacity:0.7}
+	75% {transform:rotate(240deg);opacity:0.7}
+	100% {transform:rotate(360deg);opacity:0}
+}
+@-webkit-keyframes skillCycle {
+	0% {transform:rotate(0deg);opacity:0}
+	25% {transform:rotate(120deg);opacity:0.7}
+	75% {transform:rotate(240deg);opacity:0.7}
+	100% {transform:rotate(360deg);opacity:0}
+}
+@-0-keyframes skillCycle {
+	0% {transform:rotate(0deg);opacity:0}
+	25% {transform:rotate(120deg);opacity:0.7}
+	75% {transform:rotate(240deg);opacity:0.7}
+	100% {transform:rotate(360deg);opacity:0}
+}
+#skills li {
+	display:inline-block;
+	width:30%;
+	height:30%;
+	overflow:hidden;
+	border-radius:50%;
+}
+#skills img {
+	width:100%;
+	height:100%;
+}
+
+#skill_ht {
+	float:left;
+	transform:rotate(-45deg);
+}
+#skill_cs {
+	float:right;
+	transform:rotate(45deg);
+}
+#skill_js {
+	margin:70% 5%;
+	transform:rotate(180deg);
+}
+/* 技能说明动画效果CSS3样式 */
+#skills>div {
+	width:45%;
+	height:65%;
+	margin-top:16%;
+	display:inline-block;
+	overflow:hidden;
+	animation:slideDown 5s;
+	-moz-animation:slideDown 5s;
+	-webkit-animation:slideDown 5s linear;
+	-o-animation:slideDown 5s;
+}
+@keyframes slideDown {
+	0% {height:0%;opacity:0.2;}
+	100% {height:65%;opacity:1;}
+}
+@-moz-keyframes slideDown {
+	0% {height:0%;opacity:0.2;}
+	100% {height:65%;opacity:1;}
+}
+@-webkit-keyframes slideDown {
+	0% {height:0%;opacity:0.2;}
+	100% {height:65%;opacity:1;}
+}
+@-o-keyframes slideDown {
+	0% {height:0%;opacity:0.2;}
+	100% {height:65%;opacity:1;}
+}
+#skills>div>h1, #skills>div>h3 {
+	color:white;
+	margin-top:4%;
+	margin-left:20%;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px){
+	.pc {
+		display:none;
+	}
+	.mobile {
+		display:block;
+	}
+	.banner {
+		height:160px;
+	}
+    #prevArrow, #nextArrow {
+	display:none;
+    }
+	.where_arrivated, .when_graduated, .who_isme {
+	width:100%;
+    }
+    .where_select, .message_graduated, .message_myself {
+	height:40px;
+    }
+	.where_select{
+	background-color:white;	
+	}
+	.leftline, .rightline {
+	width:30%;
+    }
+    .tipcontent {
+	width:40%;
+    }
+	.tipcontent>p {
+	font-size:20px;	
+	}
+	.content_tag {
+	display:none;	
+    }
+    .where_select>ul>li {
+	line-height:40px;
+	font-size:15px;
+	width:90%;
+    }
+	.list_container {
+	width:100%;
+    }
+	.list_container>img {
+	width:100%;
+    }
+	#little_moive {
+	width:100%;	
+    }
+	.resume_content {
+	width:100%;
+	height:250px;
+    }
+    .short_intro {
+	width:50%;
+	margin:30px 5%;
+    }
+    .short_intro>p {
+	font-size:12px;
+    }
+	.my_photo {
+	width:34%;
+	margin:30px 3%;
+    }
+    .resume_text {
+	width:50%;
+	margin:30px 5%;
+    }
+    .resume_text>ul>li {
+	font-size:12px;
+    }
+	.resume_photo {
+	width:34%;
+	margin:30px 3%;
+    }
+	.main_container {
+	background-image:url("../images/back_container.jpg");
+	background-size:100% 100%;
+    }
+    .footer_part {
+	width:100%;
+	height:460px;
+    }
+    .footer_part ul {
+    }
+    .footer_part>ul>li {
+	float:none;
+    }
+    .contact_me {
+	width:100%;
+	height:90px;
+	//margin-left:5px;
+	padding-top:10px;
+    }
+	.contact_me>h3, .contact_me>ul {
+	//width:200px;
+	//height:120px;
+	//margin-right:50px;
+	//padding-top:20px;
+	display:inline-block;
+	float:left;
+    }
+	.contact_me>ul {
+	margin-left:5%;
+    //margin-top:12px;	
+	}
+    .signature {
+	width:90%;
+	margin:10px auto;	
+	height:20px;
+	font-size:14px;
+    }
+	#years h1 {
+	line-height:20px;
+	font-weight:2px;
+	font-size:14px;
+    }
+	#skills ul {
+	height:70px;
+	width:70px;
+	}
+	#skills>div {	
+	margin-left:-5%;
+    width:50%;	
+	}
+	#skills>div>h1 {
+	font-size:16px;
+	margin-top:3%;
+	margin-left:2%;
+    }
+	#skills>div>h3 {
+	font-size:8px;
+    margin-top:1%;
+	margin-left:2%;	
+	}
+}
