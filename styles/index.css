@@ -570,3 +570,9 @@ footer{
     	font-size:1.7em;
     }	
 }
+
+@media screen only (max-device-width:500px){
+    .trigger_down{
+	    display:none;
+	}
+}
