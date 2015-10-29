@@ -571,8 +571,3 @@ footer{
     }	
 }
 
-@media screen only (max-device-width:500px){
-    .trigger_down{
-	    display:none;
-	}
-}
