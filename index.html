@@ -1,51 +1,46 @@
-﻿<!doctype html>
+﻿
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
-	<meta name="viewport" content="width=divice-width">
-	<link rel="stylesheet" href="styles/reset.css"></link>
-	<link rel="stylesheet" href="styles/main.css"></link>
-    <title>scorain's page</title>
-    <script async src="scripts/main.js"></script>
+    <title>元的主页</title>
+    <link type="text/css" rel="stylesheet" href="./styles/index.css"/>
   </head>
-
   <body>
-<!----------------------------------------------------------------- 
-                            头部 
------------------------------------------------------------------->  
     <header>
-<!---------------------- PC端显示 ---------------------->	
-	  <div class="pc">
-	    <div class="pc_top">
-		  <h1>SCORAIN</h1>
-		  <ul>
-		    <li> <a href="#">选择语言</a> </li>
-			<li> | </li>
-			<li id="wechat_trigger"> <a href="#">微信</a> </li>
-		  </ul>
-		  <div id="wechat_code" style="opacity:0;display:none">
-		    <img src="./images/wechat.jpeg">
-		  </div>
-		</div>
-
-		<div class="cross_line">
-		  <div class="pc_bottom">
-		    <ul>
-		      <li id="step_trigger"><a href="#">我的足迹</a></li>
-			  <li><a href="#">简历</a></li>
-			  <li><a href="#">技能</a></li>
-			  <li><a href="#">联系方式</a></li>	
-			  <li id="search">
-			    <form action="https://www.baidu.com/s" target="_blank">
-			      <input type="text" size=20 name="wd">
-				  <input type="submit" value="搜索">				
-				</form>
-			  </li>				  
-		    </ul>
-		  </div>
+	  <div>
+	    <a href="#"><h1 class="logo">scorain</h1></a>
+	    <ul class="top_list">
+		  <li><a href="javascript:void(0)">目录</a></li>
+		  <li class="top_trig"><a href="javascript:void(0)">微信∨</a>
+		    <div class="wechat_div top_show"><img src="images/wechat.jpeg"/></div>
+		  </li>
+		  <li class="top_trig"><a href="javascript:void(0)">语言∨</a>
+		    <ul class="lang_choi top_show">
+			  <li><a href="javascript:void(0)">中文</a></li>
+			  <li><a href="javascript:void(0)">ENG</a></li>
+			</ul>
+		  </li>
+		  <li><a href="javascript:void(0)">搜索</a></li>
+		</ul>
+	  </div>
+	</header>
+	<div>
+	  <section>
+	    <div class="my_preview">
+	      <ul>
+		    <li class="preview_trigger tScale"><a href="javascript:void(0)">我的足迹
+			<div class="trigger_down">∨</div></a></li>
+		    <li class="preview_trigger tScale"><a href="javascript:void(0)">我的简历
+			<div class="trigger_down">∨</div></a></li>
+		    <li class="preview_trigger tScale"><a href="javascript:void(0)">我的技巧
+			<div class="trigger_down">∨</div></a></li>
+		    <li><a href="javascript:void(0)">联系方式</a></li>		  
+		  </ul>				    
 		</div>
 		
-		<div class="my_travellog" id="my_travellog" style="height:0px;overflow:hidden;">		
+		<div class="my_travellog preview_content" id="my_travellog">	
+          <a href="javascript:void(0)"><div class="step_back">✖</div></a>		
 		  <div class="travel_place">
 		    <p>城市:</p>
 			<div>
@@ -88,231 +83,296 @@
 			</div>
 		  </div>		  		
 		  <img src="images/map.jpg" class="map_china">
-		</div>		  
-	  </div>	  
-<!---------------------- 移动端显示 -------------------->	  
-	  <div class="mobile">
-<!-- 移动端头部 -->	  
-	    <div id="mobile_Top" style="width:100%;margin-left:0px">
-	      <div class="mobile_top">
-		    <h3>SCORAIN</h3>
-		    <ul>
-		      <li> <a href="#"><img id="research_icon" src="images/research_icon.png"></a> </li>
-			  <li id="menu-Icon"> <a href="#"><img id="menu_icon" src="images/menu_icon.png"></a> </li>
-		    </ul>
+		</div>	
+		
+		<div class="my_resume preview_content" id="my_resume">
+		  <a href="javascript:void(0)"><div class="step_back">✖</div></a>
+		  <ul>
+		    <li>
+			  <ul class="message">
+			    <li class="outer_message"><h3>基本信息<div></div></h3></li>
+				<li class="inner_message">
+				  <ul>
+				    <li>姓名：孙元</li>
+					<li>性别：男</li>
+					<li>籍贯：湖北</li>
+					<li>生日：12月30</li>
+				  </ul>
+				</li>
+			  </ul>
+			</li>
+			<li>
+			  <ul class="message">
+			    <li class="outer_message"><h3>教育经历<div></div></h3></li>
+				<li class="inner_message">
+				  <ul>
+				    <li>学校：西南交大</li>
+					<li>专业：材料</li>
+					<li>年份：2010~2014</li>
+				  </ul>
+				</li>
+			  </ul>
+			</li>
+			<li>
+			  <ul class="message">
+			    <li class="outer_message"><h3>工作经历<div></div></h3></li>
+				<li class="inner_message">
+				  <ul>
+				    <li>公司：比亚迪</li>
+					<li>部门：DENZA工厂</li>
+					<li>职责：QZ改善</li>
+					<li>年份：2014~2015</li>
+				  </ul>
+				</li>
+			  </ul>
+			</li>
+			<li>
+			  <ul class="message">
+			    <li class="outer_message"><h3>正装照片<div></div></h3></li>
+				<li class="inner_message">
+				  <img class="resume_photo" src="images/resume.jpg"/>
+				</li>
+			  </ul>
+			</li>
+		  </ul>
+		</div>
+		
+		<div class="my_skill preview_content">
+		  <a href="#"><div class="step_back">✖</div></a>
+		  <ul>
+		    <li>
+			  <div class="skill_rotate"><img src="images/h5.png"/></div>
+			  <p>HTML</p>
+			</li>
+			<li>
+			  <div class="skill_rotate"><img src="images/c3.png"/></div>
+			  <p>CSS</p>
+			</li>
+			<li>
+			  <div class="skill_rotate"><img src="images/js.png"/></div>
+			  <p>JavaScript</p>
+			</li>
+			<li>
+			  <div class="skill_rotate"><img src="images/jq.png"/></div>
+			  <p>JQuery</p>
+			</li>
+			<li>
+			  <div class="skill_rotate"><img src="images/node.png"/></div>
+			  <p>Node.js</p>
+			</li>
+		  </ul>
+		</div>
+	  </section>
+	  <section class="banner">
+	    <div class="banner_container ban_one">
+		  <div class="banner_text">
+		    <h3><首份工作></h3>
+			<h1>比亚迪汽车工业</h1>
+			<p>新能源领军车型DENZA</p>
+			<p>品质保障、QZ改善</p>
 		  </div>
 		</div>
-<!-- 移动端横幅区域	 -->	
-		<div id="mobile_Banner" style="width:100%">
-		  <div id="search_box">
-		    <form action="https://www.baidu.com/s" target="_blank">
-			  <input type="text" name="wd" style="width:65%">
-			  <input type="submit" value="搜索" style="border-radius:3px;padding:3px">
-			</form>
+		<div class="banner_container ban_two">
+		  <div class="banner_text">
+		    <h1>毕业学校<br/>西南交通大学</h1>
+			<p>修习专业<br/>材料科学与工程</p>
 		  </div>
 		</div>
-<!-- 向右滑出菜单 -->		
-        <div id="menu_Container">
-		<!-- 移动端菜单备用空间 -->
-	    </div>		
-	  </div>
-
-	</header>
-	
-<!----------------------------------------------------------------- 
-                            主体部分 
-------------------------------------------------------------------> 	
-    <div class="main_container">
-	
-	  <section class="banner">	
-        <ul id="unorder">
-		  <li style="display:block">
-			<div class="container container_one">
-			  <div id="years">
-			    <ul>
-				  <li id="year_15"><img src="images/container_15.jpg"></li>
-				  <li id="year_14"><img src="images/container_14.png"></li>
-				  <li id="year_13"><img src="images/container_13.jpg"></li>
-				</ul>
-                <div>
-				  <h1>2015</h1>
-				  <h1>2014</h1>
-				  <h1>2013</h1>			    
-			    </div>
-			</div>
-	      </li>
-		  <li style="display:block">
-			<div class="container container_two">
-			  <div id="skills">
-			    <div>
-				 <h1>WEB前端</h1>
-				 <h3>三架马车之</h3>
-				 <h3>HTML5&nbsp;CSS3&nbsp;JS</h3>
-				 <h3>标签&nbsp;样式&nbsp;效果</h3>
-				</div>
-			    <ul>
-				  <li id="skill_ht"><img src="images/h5.png"></li>
-				  <li id="skill_cs"><img src="images/c3.png"></li>
-				  <li id="skill_js"><img src="images/js.png"></li>
-				</ul>
-			  </div>
+		<div class="banner_container ban_three">
+		  <div class="banner_text">
+		    <h1>出生地</h1>
+			<h3>湖北 洪湖</h3>
+			<p>江汉平原、湿地<br/>鱼米之乡</p>
+		  </div>
+		</div>
+		<div class="arrow" id="prevArrow"><a href="javascript:void(0)">
+		  <img src="images/prevArrow.png">
+		</a></div>
+        <div class="arrow" id="nextArrow"><a href="javascript:void(0)">
+		  <img src="images/nextArrow.png">
+		</a></div>
+    	<ul id="btnOn">
+    	  <li><img src="images/btn_on.png"></li>
+    	  <li><img src="images/btn_on.png"></li>
+    	  <li><img src="images/btn_on.png"></li>
+    	</ul>		
+	  </section>
+	  <section class="hoist_div">
+	    <div class="content_tag">
+		  <p>我去过哪里</p>
+		</div>
+		<div></div>
+		<ul id="hoist_slibing">
+		  <li><a href="javascript:void(0)">∧</a></li>
+		  <li><a href="javascript:void(0)">∨</a></li>
+		</ul>
+		<ul id="hoist_lists">
+		  <li>城市(深圳，成都，武汉)</li>
+	      <li>风光(鼓浪屿，九寨沟，四姑娘山)</li>
+		  <li>人文(都江堰，宽窄巷子，锦里)</li>
+		</ul>		
+	  </section>
+	  <section class="where_lists">
+	    <ul>
+		  <li class="list_container">
+			<div class="pic_div"><img class="tScale" src="images/gulang.jpg"></div>
+			<div>
+			  <h3>鼓浪屿</h3>
+			  <p>2015年5月份，与同事一起去厦门旅游，主要景点包括鼓浪屿、厦门大学、曾厝垵等，历时4天...</p>
 			</div>
 		  </li>
-		  <li style="display:block">
-			<div class="container container_three">
-			  <div id="tomyself">
-			    <!-- 留以备用 -->
-			  </div>
+          <li class="list_container">
+			<div class="pic_div"><img class="tScale" src="images/jiuzhai.jpg"></div>
+			<div>
+			  <h3>九寨沟</h3>
+			  <p>2014年5月份，毕业旅游，与朋友一起去往阿坝藏族羌族自治州，主要景点为九寨、黄龙，历时3天...</p>
+			</div>
+		  </li>
+          <li class="list_container">
+			<div class="pic_div"><img class="tScale" src="images/siguniang.jpg"></div>
+			<div>
+			  <h3>四姑娘山</h3>
+			  <p>2013年10月份，户外运动，与同学一起去往四姑娘山，连续三天徒步登山，在上山住过帐篷，总共历时6天...</p>
 			</div>
 		  </li>			
-		</ul> 
-        <div id="prevArrow"><img src="images/prevArrow.png"></div>
-        <div id="nextArrow"><img src="images/nextArrow.png"></div>
-    	<ul id="btnOn">
-    	  <li><img style="opacity:1.0" src="images/btn_on.png"></li>
-    	  <li><img style="opacity:0.3" src="images/btn_on.png"></li>
-    	  <li><img style="opacity:0.3" src="images/btn_on.png"></li>
-    	</ul>		  		
+		</ul>
+	  </section>
+	  <section class="my_canvas">
+	    <div class="my_topic">
+		  <div class="line"><div></div></div>
+		  <div class="topic"><p>我的CANVAS</p></div>
+		  <div class="line"><div></div></div>
+		</div>
+		<div class="canvas_content">
+		  <div id="canvas_win">
+		    <input type="image" src="images/canvas_win.jpg"/>			
+	      </div>		
+		  <!-- CANVAS小应用占位 -->
+		  <div>		           		  
+		    <div class="choice_canvas">
+			  <ul>
+			    <!-- 切换为取色器的按钮 -->
+			    <li><a href="javascript:void(0);">取色器</a></li>
+				<li><a href="javascript:void(0);">手绘台</a></li>
+				<!-- <li>其他canvas小应用占位</li>	 -->			
+			  </ul>
+			</div>
+			<!-- 取色器显示台 -->
+			<div class="get_color control_disp">
+			  <hr></hr>
+			  <div class="color_intro">
+			    <h2>RGB取色器</h2>
+				<p>如右所示为一个颜色选取画布，选取想要的颜色单击，可以在下面的区域中读取RGB格式的颜色值。</p>
+			  </div>
+			  <div class="color_show"><div id="show_div"></div></div>
+			  <hr></hr>
+			  <div class="color_value">
+			    <ul>
+				  <li>R:<span>000</span></li>
+				  <li>G:<span>000</span></li>
+				  <li>B:<span>000</span></li>
+				  <li><p class="last_cv">rgb:(000,000,000)</p></li>
+				</ul>
+			  </div>
+			  <div class="color_chart">
+			    <canvas width="210px" height="210px" id="color_chart"></canvas>
+			  </div>
+			</div>
+			<!-- <div>其他canvas小应用显示台占位</div> -->
+			<div class="control_disp" style="display:none">
+			  <div class="draw_pic">
+			    <ul>
+				  <li><a href="javascript:void(0);"><p>选择颜色<span>∨</span></p></a></li>
+				    
+				  <li><a href="javascript:void(0);"><p>选择宽度<span>∨</span></p></a></li>
+				  <li id="show_button"><a href="javascript:void(0);"><p>导出图片</p></a></li> 
+                  <li id="clear_button"><a href="javascript:void(0);"><p>清除画布</p></a></li>				  
+				</ul>
+			  </div>
+			  <ul class="set_lists">
+				<li><a href="javascript:void(0);">黑色</a></li>
+				<li><a href="javascript:void(0);">红色</a></li>
+				<li><a href="javascript:void(0);">蓝色</a></li>
+				<li><a href="javascript:void(0);">绿色</a></li>
+				<li><a href="javascript:void(0);">橙色</a></li>
+				<li><a href="javascript:void(0);">灰色</a></li>
+			  </ul>		  
+		      <ul class="set_lists">
+				<li><a href="javascript:void(0);">1px</a></li>
+				<li><a href="javascript:void(0);">2px</a></li>
+				<li><a href="javascript:void(0);">5px</a></li>
+				<li><a href="javascript:void(0);">10px</a></li>
+				<li><a href="javascript:void(0);">15px</a></li>
+				<li><a href="javascript:void(0);">20px</a></li>
+			  </ul>
+			</div>
+		  </div>
+		  <!-- 取色器画布 -->
+		  <div id="canvas_div">
+		    <canvas width="400px" height="400px" class="canvas_body">
+			  <img src="images/color.jpg"/>
+			</canvas>
+			<canvas width="400px" height="400px" class="canvas_body">
+			</canvas>
+		  </div>
+		  <!-- <div>其他canvas小应用画布占位</div> -->
+		</div>
 	  </section>
 	  
 	  
-	  <section class="where_arrivated">
-	    <div class="where_select">
-		  <div class="content_tag">
-		    <p>我去过哪里</p>
-		  </div>
-		  <ul id="hoist_lists">
-		    <li>城市(深圳，成都，武汉)</li>
-			<li>风光(鼓浪屿，九寨沟，四姑娘山)</li>
-			<li>人文(都江堰，宽窄巷子，锦里)</li>
-		  </ul>
+	  <section class="my_years">
+	    <div class="my_topic">
+		  <div class="line"><div></div></div>
+		  <div class="topic"><p>我的PHOTO</p></div>
+		  <div class="line"><div></div></div>
 		</div>
-        <div id="where_listone">
+		<div class="photo_wall">
 		  <ul>
-		    <li class="list_container lc_one">
-			  <img src="images/gulang.jpg">
-			  <div>
-			    <h3>鼓浪屿</h3>
-			    <p>2015年5月份，与同事一起去厦门旅游，主要景点包括鼓浪屿、厦门大学、曾厝垵等，历时4天...</p>
-			  </div>
+		    <li><img class="tScale" src="images/pic1.jpg"/></li>
+			<li>
+			  <ul class="v_row">
+			    <li><img class="tScale" src="images/pic6.jpg"/></li>
+				<li><img class="tScale" src="images/pic5.jpg"/></li>
+			  </ul>
 			</li>
-            <li class="list_container lc_two">
-			  <img src="images/jiuzhai.jpg">
-			  <div>
-			    <h3>九寨沟</h3>
-			    <p>2014年5月份，毕业旅游，与朋友一起去往阿坝藏族羌族自治州，主要景点为九寨、黄龙，历时3天...</p>
-			  </div>
+			<li><img class="tScale" src="images/pic7.jpg"/></li>
+			<li>
+			  <ul class="v_row">
+			    <li><img class="tScale" src="images/pic8.jpg"/></li>
+				<li><img class="tScale" src="images/pic2.jpg"/></li>
+			  </ul>
 			</li>
-            <li class="list_container lc_three">
-			  <img src="images/siguniang.jpg">
-			  <div>
-			    <h3>四姑娘山</h3>
-			    <p>2013年10月份，户外运动，与同学一起去往四姑娘山，连续三天徒步登山，在上山住过帐篷，总共历时6天...</p>
-			  </div>
-			</li>			
+			<li><img class="tScale" src="images/pic3.jpg"/></li>
 		  </ul>
-		</div>		
-	  </section>
-	  
-	  <section class="when_graduated">	    
-		<div class="message_graduated">
-		  <div class="leftline"></div>
-          <div class="tipcontent"><p>我的视频</p></div>
-          <div class="rightline"></div>		  
-		</div>
-		<!-- <div id="moive_pic">
-		  <img src="images/moive_pic.png">
-		</div> -->
-		<div id="little_moive">
-		  <video width=100% controls="controls">
-		    <source src="sources/spacetaken.mp4" type="video/mp4">
-		  </video>
-		</div>
-		        		
-	  </section>
-	  
-	  <section class="who_isme">
-	    <div class="message_myself">
-		  <div class="leftline"></div>
-          <div class="tipcontent"><p>我的简介</p></div>
-          <div class="rightline"></div>  
-		</div>
-		<div class="resume_content">
-		  <div class="short_intro">
-            <p>孙元，男，1990年12月30号出生于湖北省洪湖市燕窝镇，2010年被西南交通大学材料科学与工程学院录取，2014年毕业，学历本科。同年7月进入比亚迪汽车工业有限公司，任职于tiger工厂品质部。2015年6月开始接触网站前端，并产生了浓厚的兴趣，遂开始自学。</p>
-		  </div>
-		  <div class="my_photo">
-		    <img src="images/my_photo.jpg">
-		  </div>		  
-		</div>
-		<div class="resume_content">
-		  <div class="resume_photo">
-		    <img src="images/resume_photo.png">
-		  </div>
-		  <div class="resume_text">
-		    <ul>
-			  <li>对互联网感兴趣，希望将来从事相关工作</li>
-			  <li>目前正在学习HTML，CSS，Javascript等前端知识</li>
-			  <li>可以做出简单的静态页面</li>
-			  <li>初步接触Jquery，Bootstrap，node.js</li>
-			  <li>无项目经验，但有较高的学习热情</li>
-			  <li>有一定的学习和适应能力</li>
-			</ul>
-		  </div>
 		</div>
 	  </section>
-	  
-	  
 	</div>
-	
-	
-	<footer class="footer_part">
-      <ul>
-	    <li>
-		  <div class="contact_me">
-		    <h3>地址:</h3>
-			<ul>
-			  <li><h4>湖北省洪湖市(故乡)</h4></li>
-			  <li><h4>四川省成都市(大学)</h4></li>
-			  <li><h4>广东省深圳市(工作)</h4></li>
-			</ul>
-		  </div>
-		</li>
-		<li>
-		  <div class="contact_me">
-		    <h3>邮箱:</h3>
-			<ul>
-			  <li><h4>617108090@qq.com</h4></li>
-			  <li><h4>cyuan.sun@gmail.com</h4></li>
-			  <li><h4>surain@outlook.com</h4></li>
-			</ul>
-		  </div>
-		</li>
-		<li>
-		  <div class="contact_me">
-		    <h3>实时:</h3>
-			<ul>
-			  <li><h4>617108090(QQ)</h4></li>
-			  <li><h4>13510883578(手机)</h4></li>
-			</ul>
-		  </div>
-		</li>
-		<li>
-		  <div class="contact_me">
-		    <h3>链接:</h3>
-			<ul>
-			  <li><a href=""><h4>练习(扁平化页面)</h4></a></li>
-			  <li><a href=""><h4>练习(仿凡科页面)</h4></a></li>
-			  <li><a href=""><h4>练习(仿果壳页面)</h4></a></li>
-			</ul>
-		  </div>
-		</li>
-	  </ul><br>
-	  <p class="signature"> &copy2015 Designed and Developed by Scorain</p>
+	<footer>
+	  <div class="copy_by">&copy 2015 Designed and Developed By Scorain</div>
 	</footer>
 	
-
-	
-  </body>	
+		
+	<script>
+	(function(){
+	    var picsDiv=document.getElementsByClassName("pic_div");
+		var banner=document.getElementsByClassName("banner")[0];
+		var picX=picsDiv[0].offsetWidth;
+		var bannerX=banner.offsetWidth;
+		for(var i=0;i<picsDiv.length;i++){
+		    picsDiv[i].style.height=picX*300/370+"px";
+		};
+		banner.style.height=bannerX*5/12+"px";
+	    window.onresize=function(){
+		    bannerX=banner.offsetWidth;
+			banner.style.height=bannerX*5/12+"px";
+            picX=picsDiv[0].offsetWidth;			
+		    for(var i=0;i<picsDiv.length;i++){
+		        picsDiv[i].style.height=picX*300/370+"px";
+		    };
+	    }; 
+	  })();	  
+	</script>
+  </body>
+  <script src="./scripts/index.js"></script>
+  <script src="./scripts/canvasDemo.js"></script>
 </html>
-
