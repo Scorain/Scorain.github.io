@@ -106,7 +106,7 @@ function drawPic(){
 	var oliColor=oul[0].getElementsByTagName("li");
 	var oliWeight=oul[1].getElementsByTagName("li");
 	var clearButton=document.getElementById("clear_button");
-	var showButton=document.getElementById("show_button");
+	/*var showButton=document.getElementById("show_button");*/
 	var setColor=["black","red","blue","green","orange","grey"];
 	var setWeight=[1,2,5,10,15,20];
 	for(var i=0;i<oliColor.length;i++){
@@ -155,13 +155,13 @@ function drawPic(){
 	clearButton.onclick=function(){
         drawPicture.clearRect(0,0,400,400);
 	};
-	var dataURL=drawPicCan.toDataURL("image/png");   	
+	/*var dataURL=drawPicCan.toDataURL("image/png");   	
 	showButton.onclick=function(){
 		var img=document.createElement("img");
 		img.src=dataURL;
 		img.setAttribute("class","dataURL_img");
 		document.getElementsByClassName("control_disp")[1].appendChild(img);
-	};	
+	};*/	
 };
 /* 取色器与手绘台切换实现函数 */
 (function(){
@@ -170,20 +170,20 @@ function drawPic(){
 	var controlDisp=document.getElementsByClassName("control_disp");
 	var canvasBody=document.getElementsByClassName("canvas_body");
 	function init(){
-		controlDisp[0].style.display="block";
-		controlDisp[1].style.display="none";
-		canvasBody[0].style.display="block";
-		canvasBody[1].style.display="none";
-		getCol();
-	};
-	init();
-	oliChoose[0].onclick=init;
-	oliChoose[1].onclick=function(){
 		controlDisp[1].style.display="block";
 		controlDisp[0].style.display="none";
 		canvasBody[1].style.display="block";
 		canvasBody[0].style.display="none";
 		drawPic();
+	};
+	init();
+	oliChoose[0].onclick=init;
+	oliChoose[1].onclick=function(){
+		controlDisp[0].style.display="block";
+		controlDisp[1].style.display="none";
+		canvasBody[0].style.display="block";
+		canvasBody[1].style.display="none";
+		getCol();
 	};
 })();
 /* canvas窗帘效果实现函数 */
