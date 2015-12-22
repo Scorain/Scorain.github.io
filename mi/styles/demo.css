@@ -1,0 +1,117 @@
+
+
+
+.leftlist_div{
+	//width:100%;
+	//width:600px;
+	height:460px;
+	background-color:white;
+	position:absolute;
+	top:0px;
+	left:236px;
+	z-index:3;
+	//outline:1px solid red;
+}
+
+
+
+.column-list{
+	float:left;
+}
+
+.phone-list{
+	width:260px;
+	height:50px;
+	margin:25px 0px;
+	//outline:1px solid red;
+}
+.phone-list-left{
+	width:130px;
+	height:50px;
+	margin:0px 20px;
+	//outline:1px solid red;
+	float:left;
+}
+.phone-list-right{
+	width:50px;
+	height:20px;
+	margin:15px 20px;
+	
+	outline:2px solid red;
+	float:left;
+}
+.phone-list-right a{
+	text-align:center;
+    color:red;
+}
+.phone-list-left a, .notphone-list-left a{
+	width:100%;
+	height:100%;
+	color:rgb(50,50,50);
+}
+.phone-list-left img, .notphone-list-left img{
+	margin-top:5px;
+	float:left;
+}
+.phone-list-left p, .notphone-list-left p{
+	display:block-inline;
+	line-height:50px;
+	font-size:14px;
+}
+
+
+.notphone-list{
+	width:260px;
+	height:50px;
+	margin:25px 0px;
+	//outline:1px solid red;
+}
+.notphone-list-left{
+	width:260px;
+	height:50px;
+	margin:0px 20px;
+	//outline:1px solid red;
+	float:left;
+}
+
+
+
+
+
+
+.toplist-div{
+	width:100%;
+	height:0px;
+	overflow:hidden;
+	background-color:white;
+	position:absolute;
+	top:140px;
+	z-index:5;
+	//outline:1px solid red;
+}
+
+.toplist-div>ul{
+	width:1226px;
+	height:230px;
+	margin:0px auto;
+	//outline:1px solid red;
+}
+.toplist-div-spec{
+	width:190px;
+	height:230px;
+	margin:0px 5px;
+	//outline:1px solid red;
+	float:left;
+}
+.toplist-div-line{
+	width:3px;
+	height:230px;
+	//margin:0px 5px;
+	//outline:1px solid red;
+	float:left;
+}
+.toplist-div-spec img{
+	display:table;
+	margin:20px auto;
+}
+
