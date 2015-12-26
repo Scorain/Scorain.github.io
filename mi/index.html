@@ -4,13 +4,15 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-	<meta name="viewport" content="width=1226"/>
+	<!-- <meta name="viewport" content="width=1226"/> -->
 	<title>仿小米官网</title>
-	<link rel="stylesheet" type="css/text" href="styles/reset.css"/>
-	<link rel="stylesheet" type="css/text" href="styles/index.css"/>
-	<link rel="stylesheet" type="css/text" href="styles/demo.css"/>
+	<link rel="stylesheet" type="text/css" href="styles/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="styles/main.css"/>
+	<link rel="stylesheet" type="text/css" href="styles/demo.css"/>
 	<script src="scripts/trigger.js"></script>
-	<script src="scripts/index.js"></script>
+	<script src="scripts/bannerAPI.js"></script>
+	<script src="scripts/hover.js"></script>
+	<script src="scripts/main.js"></script>
   </head>
   <body>
     <header>
@@ -303,7 +305,14 @@
 		  </ul>		  
 		</div>
 		<div class="nav-middle">
-		  <a href="#"><img src="images/hot1.jpg"/></a>
+		  <ul class="nav-middle-oul">
+		    <li><a href="#"><img src="images/hot1.jpg"/></a></li>
+		    <li><a href="#"><img src="images/hot2.jpg"/></a></li>
+		    <li><a href="#"><img src="images/hot3.jpg"/></a></li>
+		    <li><a href="#"><img src="images/hot4.jpg"/></a></li>
+		    <li><a href="#"><img src="images/hot5.jpg"/></a></li>
+		  </ul>
+		  
 		  <div class="nav-left">
 		    <ul class="nav-left-btn">
 		      <li>手机&nbsp平板&nbsp电话卡<img src="images/navMenu_icon.png"/></li>
@@ -1140,10 +1149,8 @@
 			  		
 		    </ul>
 		  </div>
-		 		  
-		
-		  
-		  <ul class="nav-banner-btn">
+				  
+		  <ul class="nav-banner-btn" style="display:none">
 		    <li><div></div></li>
 			<li><div></div></li>
 			<li><div></div></li>
@@ -1151,54 +1158,71 @@
 			<li><div></div></li>
 		  </ul>
 		</div>
+		
+<!-- 调试hover -->
+
+		
+<!-- 调试hover -->
+
+		
 		<div class="nav-bottom">
 		  <div class="nav-bottom-left">
 		    <ul>
-			  <li>
+			  <li class="nav-bottom-left-inner">
 			    <a href="#">
 				  <img src="images/channel1.png"/>
 				  <p>电信专场</p>
+				  <span class="nav-bottom-left-outer"></span>
 				</a>
 			  </li>
-			  <li>
+			  <li class="nav-bottom-left-inner">
 			    <a href="#">
 				  <img src="images/channel2.png"/>
 				  <p>企业团购</p>
+				  <span class="nav-bottom-left-outer"></span>
 				</a>
 			  </li>
-			  <li>
+			  <li class="nav-bottom-left-inner">
 			    <a href="#">
 				  <img src="images/channel3.png"/>
 				  <p>官方产品</p>
+				  <span class="nav-bottom-left-outer"></span>
 				</a>
 			  </li>
-			  <li>
+			  <li class="nav-bottom-left-inner">
 			    <a href="#">
 				  <img src="images/channel4.png"/>
 				  <p>小米移动</p>
+				  <span class="nav-bottom-left-outer"></span>
 				</a>
 			  </li>
-			  <li>
+			  <li class="nav-bottom-left-inner">
 			    <a href="#">
 				  <img src="images/channel5.png"/>
 				  <p>话费充值</p>
+				  <span class="nav-bottom-left-outer"></span>
 				</a>
 			  </li>
-			  <li>
+			  <li class="nav-bottom-left-inner">
 			    <a href="#">
 				  <img src="images/channel6.png"/>
 				  <p>防伪查询</p>
+				  <span class="nav-bottom-left-outer"></span>
 				</a>
 			  </li>
 			</ul>
+			
 		  </div>
 		  <ul class="nav-bottom-right">
-		    <li><a href=""><img src="images/hot6.jpg"/></a></li>
-			<li><a href=""><img src="images/hot7.jpg"/></a></li>
-			<li><a href=""><img src="images/hot8.jpg"/></a></li>
+		    <li class="inner"><a href=""><img src="images/hot6.jpg"/><span class="outer"></span></a></li>
+		    <li class="inner"><a href=""><img src="images/hot7.jpg"/><span class="outer"></span></a></li>
+		    <li class="inner"><a href=""><img src="images/hot8.jpg"/><span class="outer"></span></a></li>
 		  </ul>
 		</div>
 	  </div>
+	  
+	  
+	  
 	  
 	  <div class="single-sale">
 	    <p class="single-sale-title">小米明星单品</p>
@@ -1717,18 +1741,229 @@
 	  <section class="hot-attention">
 	    <p class="single-sale-title">内容</p>
 		<ul class="hot-attention-ul">
-		  <li class="hover-hoist main-content1">
-		    
+		  <li class="hover-hoist main-content1 main-content-li">
+		    <p class="main-content-title">图书</p>
+			<ul class="main-content-oul">
+			  <li>
+			    <a href="#">				  
+				  <p class="main-content-p1">老板不在家，熊猫君又放假</p>
+				  <div>
+				  <p class="main-content-p2">上百本图书，统一降价，哈哈哈哈哈哈哈哈骄傲骄傲阿卡卡里</p>
+				  <p class="main-content-p3">99元</p>
+				  <img src="images/content_book_1.jpg"/>
+				  </div>
+				</a>
+			  </li>
+			  <li>
+			    <a href="#">				  
+				  <p class="main-content-p1">老板不在家，熊猫君又放假</p>
+				  <div>
+				  <p class="main-content-p2">上百本图书，统一降价，哈哈哈哈哈哈哈哈骄傲骄傲阿卡卡里</p>
+				  <p class="main-content-p3">99元</p>
+				  <img src="images/content_book_1.jpg"/>
+				  </div>
+				</a>
+			  </li>
+			  <li>
+			    <a href="#">				  
+				  <p class="main-content-p1">老板不在家，熊猫君又放假</p>
+				  <div>
+				  <p class="main-content-p2">上百本图书，统一降价，哈哈哈哈哈哈哈哈骄傲骄傲阿卡卡里</p>
+				  <p class="main-content-p3">99元</p>
+				  <img src="images/content_book_1.jpg"/>
+				  </div>
+				</a>
+			  </li>
+			  <li>
+			    <a href="#">				  
+				  <p class="main-content-p1">老板不在家，熊猫君又放假</p>
+				  <div>
+				  <p class="main-content-p2">上百本图书，统一降价，哈哈哈哈哈哈哈哈骄傲骄傲阿卡卡里</p>
+				  <p class="main-content-p3">99元</p>
+				  <img src="images/content_book_1.jpg"/>
+				  </div>
+				</a>
+			  </li>
+			</ul>
+			<ul class="main-content-choul">
+			  <li><a href="javascript:void(0)"><div></div></a></li>
+			  <li><a href="javascript:void(0)"><div></div></a></li>
+			  <li><a href="javascript:void(0)"><div></div></a></li>
+			  <li><a href="javascript:void(0)"><div></div></a></li>
+			</ul>
+			<ul class="main-content-pnul">
+			  <li><img src="images/content_left.png"/></li>
+			  <li><img src="images/content_right.png"/></li>
+			</ul>
+			
+			
+			
 		  </li>
-		  <li class="hover-hoist main-content2">
-		   
+		  <li class="hover-hoist main-content2 main-content-li">
+		    <p class="main-content-title">应用</p>
+			<ul class="main-content-oul">
+			  <li>
+			    <a href="#">				  
+				  <p class="main-content-p1">老板不在家，熊猫君又放假</p>
+				  <div>
+				  <p class="main-content-p2">上百本图书，统一降价，哈卡卡里</p>
+				  <p class="main-content-p3">免费</p>
+				  <img src="images/content_game_1.png"/>
+				  </div>
+				</a>
+			  </li>
+			  <li>
+			    <a href="#">				  
+				  <p class="main-content-p1">老板不在家，熊猫君又放假</p>
+				  <div>
+				  <p class="main-content-p2">上百本图书，统哈哈哈哈骄傲骄傲阿卡卡里</p>
+				  <p class="main-content-p3">199元</p>
+				  <img src="images/content_theme_1.jpg"/>
+				  </div>
+				</a>
+			  </li>
+			  <li>
+			    <a href="#">				  
+				  <p class="main-content-p1">老板不在家又放假</p>
+				  <div>
+				  <p class="main-content-p2">上百本图书哈哈哈哈哈骄傲骄傲阿卡卡里</p>
+				  <p class="main-content-p3">99元</p>
+				  <img src="images/content_book_1.jpg"/>
+				  </div>
+				</a>
+			  </li>
+			  <li>
+			    <a href="#">				  
+				  <p class="main-content-p1">老猫君又放假</p>
+				  <div>
+				  <p class="main-content-p2">上百本图书，统一降价 ，哈哈哈哈哈哈哈哈骄傲骄傲阿卡卡里</p>
+				  <p class="main-content-p3">99元</p>
+				  <img src="images/content_book_1.jpg"/>
+				  </div>
+				</a>
+			  </li>
+			</ul>
+			<ul class="main-content-choul">
+			  <li><a href="javascript:void(0)"><div></div></a></li>
+			  <li><a href="javascript:void(0)"><div></div></a></li>
+			  <li><a href="javascript:void(0)"><div></div></a></li>
+			  <li><a href="javascript:void(0)"><div></div></a></li>
+			</ul>
+			<ul class="main-content-pnul">
+			  <li><img src="images/content_left.png"/></li>
+			  <li><img src="images/content_right.png"/></li>
+			</ul>
 		  </li>
-		  <li class="hover-hoist main-content3">
-		    
+		  <li class="hover-hoist main-content3 main-content-li">
+		    <p class="main-content-title">主题</p>
+			<ul class="main-content-oul">
+			  <li>
+			    <a href="#">				  
+				  <p class="main-content-p1">老板不在家，熊猫君又放假</p>
+				  <div>
+				  <p class="main-content-p2">上百本图书，统一降价，哈哈哈哈哈哈哈哈骄傲骄傲阿卡卡里</p>
+				  <p class="main-content-p3">99元</p>
+				  <img src="images/content_theme_1.png"/>
+				  </div>
+				</a>
+			  </li>
+			  <li>
+			    <a href="#">				  
+				  <p class="main-content-p1">老板不在家，熊猫君又放假</p>
+				  <div>
+				  <p class="main-content-p2">上百本图书，统一降价，哈哈哈哈哈哈哈哈骄傲骄傲阿卡卡里</p>
+				  <p class="main-content-p3">99元</p>
+				  <img src="images/content_theme_1.png"/>
+				  </div>
+				</a>
+			  </li>
+			  <li>
+			    <a href="#">				  
+				  <p class="main-content-p1">老板不在家，熊猫君又放假</p>
+				  <div>
+				  <p class="main-content-p2">上百本图书，统一降价，哈哈哈哈哈哈哈哈骄傲骄傲阿卡卡里</p>
+				  <p class="main-content-p3">99元</p>
+				  <img src="images/content_book_1.jpg"/>
+				  </div>
+				</a>
+			  </li>
+			  <li>
+			    <a href="#">				  
+				  <p class="main-content-p1">老板不在家，熊猫君又放假</p>
+				  <div>
+				  <p class="main-content-p2">上百本图书，统一降价，哈哈哈哈哈哈哈哈骄傲骄傲阿卡卡里</p>
+				  <p class="main-content-p3">99元</p>
+				  <img src="images/content_book_1.jpg"/>
+				  </div>
+				</a>
+			  </li>
+			</ul>
+			<ul class="main-content-choul">
+			  <li><a href="javascript:void(0)"><div></div></a></li>
+			  <li><a href="javascript:void(0)"><div></div></a></li>
+			  <li><a href="javascript:void(0)"><div></div></a></li>
+			  <li><a href="javascript:void(0)"><div></div></a></li>
+			</ul>
+			<ul class="main-content-pnul">
+			  <li><img src="images/content_left.png"/></li>
+			  <li><img src="images/content_right.png"/></li>
+			</ul>
 		  </li>
-		  <li class="hover-hoist main-content4">
-		    
-		  </li>
+		  <li class="hover-hoist main-content4 main-content-li">
+		    <p class="main-content-title">游戏</p>
+			<ul class="main-content-oul">
+			  <li>
+			    <a href="#">				  
+				  <p class="main-content-p1">老板不在家，熊猫君又放假</p>
+				  <div>
+				  <p class="main-content-p2">上百本图书，统一降价，哈哈哈哈哈哈哈哈骄傲骄傲阿卡卡里</p>
+				  <p class="main-content-p3">99元</p>
+				  <img src="images/content_theme_1.jpg"/>
+				  </div>
+				</a>
+			  </li>
+			  <li>
+			    <a href="#">				  
+				  <p class="main-content-p1">老板不在家，熊猫君又放假</p>
+				  <div>
+				  <p class="main-content-p2">上百本图书，统一降价，哈哈哈哈哈哈哈哈骄傲骄傲阿卡卡里</p>
+				  <p class="main-content-p3">99元</p>
+				  <img src="images/content_book_1.jpg"/>
+				  </div>
+				</a>
+			  </li>
+			  <li>
+			    <a href="#">				  
+				  <p class="main-content-p1">老板不在家，熊猫君又放假</p>
+				  <div>
+				  <p class="main-content-p2">上百本图书，统一降价，哈哈哈哈哈哈哈哈骄傲骄傲阿卡卡里</p>
+				  <p class="main-content-p3">99元</p>
+				  <img src="images/content_book_1.jpg"/>
+				  </div>
+				</a>
+			  </li>
+			  <li>
+			    <a href="#">				  
+				  <p class="main-content-p1">老板不在家，熊猫君又放假</p>
+				  <div>
+				  <p class="main-content-p2">上百本图书，统一降价，哈哈哈哈哈哈哈哈骄傲骄傲阿卡卡里</p>
+				  <p class="main-content-p3">99元</p>
+				  <img src="images/content_book_1.jpg"/>
+				  </div>
+				</a>
+			  </li>
+			</ul>
+			<ul class="main-content-choul">
+			  <li><a href="javascript:void(0)"><div></div></a></li>
+			  <li><a href="javascript:void(0)"><div></div></a></li>
+			  <li><a href="javascript:void(0)"><div></div></a></li>
+			  <li><a href="javascript:void(0)"><div></div></a></li>
+			</ul>
+			<ul class="main-content-pnul">
+			  <li><img src="images/content_left.png"/></li>
+			  <li><img src="images/content_right.png"/></li>
+			</ul>
+		  </li>  
 		</ul>
 	  </section>
 	  

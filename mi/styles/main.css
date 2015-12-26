@@ -99,8 +99,15 @@ header a:hover{
 	width:1226px;
 	height:460px;
 	position:relative;
-	//outline:1px solid red;
-	
+	overflow:hidden;	
+}
+.nav-middle>ul:first-child{
+	width:250%;
+	height:100%;
+	margin-left:6px;
+}
+.nav-middle>ul:first-child>li{
+	float:left;
 }
 .nav-left{
 	width:236px;
@@ -110,13 +117,13 @@ header a:hover{
 	top:0px;
 	left:0px;
 	z-index:2;
-	overflow:hidden;
+	//overflow:hidden;
 	//outline:1px solid red;
 }
 .nav-left ul{
 	width:100%;
 	margin-top:30px;
-	
+	//margin-left:-6px;
 }
 .nav-left li{
 	display:block-inline;
@@ -186,11 +193,11 @@ header a:hover{
 	float:left;
 	//outline:1px solid blue;
 }
-.nav-bottom-left a{
-	width:100%;
+/* .nav-bottom-left a{
+	//width:100%;
 	height:100%;
 	//outline:1px solid blue;
-}
+} */
 .nav-bottom-left img{
 	width:25%;
 	height:25%;
@@ -440,7 +447,7 @@ header a:hover{
 }
 .hot-attention{
 	width:1226px;
-	height:400px;
+	//height:400px;
 	margin:40px auto;
 	overflow:hidden;
 	//outline:1px solid red;
@@ -457,10 +464,10 @@ header a:hover{
 	float:left;
 	margin-right:20px;
 }
-.hot-attention-ul li>a{
+/* .hot-attention-ul li>a{
 	width:100%;
 	height:100%;	
-}
+} */
 .hot-attention-ul li>a>img{
 	width:100%;	
 }
@@ -477,6 +484,11 @@ header a:hover{
 }
 .com-part{
 	font-size:12px;
+}
+li.main-content-li{
+	height:400px;
+	overflow:hidden;
+	//margin-bottom:50px;
 }
 .main-content1{
 	border-top:2px solid orange;
@@ -551,12 +563,12 @@ footer{
 	margin-left:35px;
 	float:left;
 }
-.footer-service ul a{
+/* .footer-service ul a{
 	width:100%;
 	height:100%;
 	//display:table;
 	//outline:1px solid red;
-}
+} */
 .footer-service img{
 	margin:30px 10px;
 	float:left;
@@ -683,7 +695,7 @@ li#footer-service-line{
 	margin-top:5px;
 }
 .left-rihgt-top a,.left-rihgt-top span{
-	font-size:10px;
+	font-size:12px;
 	color:rgb(100,100,100);
 }
 .left-rihgt-top a:hover{
@@ -692,7 +704,7 @@ li#footer-service-line{
 .left-right-bottom{
 	margin-left:5px;
 	float:left;
-	font-size:6px;
+	font-size:10px;
 	color:rgb(100,100,100);
 }
 

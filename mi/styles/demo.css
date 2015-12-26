@@ -45,8 +45,8 @@
     color:red;
 }
 .phone-list-left a, .notphone-list-left a{
-	width:100%;
-	height:100%;
+	//width:100%;
+	//height:100%;
 	color:rgb(50,50,50);
 }
 .phone-list-left img, .notphone-list-left img{
@@ -115,3 +115,128 @@
 	margin:20px auto;
 }
 
+
+
+.main-content-li{
+	text-align:center;
+}
+.main-content-title{
+	//text-align:center;
+	color:red;
+	font-size:16px;
+	margin:20px;
+}
+.main-content-oul{
+	width:1200px;
+	//height:280px;
+}
+
+.main-content-oul>li{
+	width:290px;
+	height:280px;
+	//outline:1px solid red;
+	//height:300px;
+	margin:0px auto;
+	float:left;
+}
+.main-content-oul div{
+	width:80%;
+	height:240px;
+	margin:-10px auto;
+	//outline:1px solid red;
+}
+.main-content-p1{
+	color:rgb(50,50,50);
+	font-size:20px;
+	margin-top:-10px;
+	margin-bottom:20px;
+}
+.main-content-p2{
+	color:rgb(200,200,200);
+	font-size:12px;
+	margin:10px;
+}
+.main-content-p3{
+	color:rgb(100,100,100);
+	font-size:14px;
+	margin:10px;
+}
+.main-content-choul{
+	display:table;
+	margin:0 auto;
+	//outline:1px solid red;
+} 
+.main-content-choul>li{
+	float:left;	
+	width:30px;
+	height:30px;
+	margin:0px;
+	padding:0px;
+	//outline:1px solid black;
+}
+.main-content-choul div{
+	width:5px;
+	height:5px;
+	background-color:grey;
+	//border:3px solid red;
+	border-radius:50%;
+	margin:10px auto;
+}
+.main-content-choul div:hover{
+	width:5px;
+	height:5px;
+	//background-color:grey;
+	border:3px solid red;
+	border-radius:50%;
+	margin:10px auto;
+}
+.main-content-pnul{
+	width:290px;
+	height:50px;
+	//outline:1px solid yellow;
+	position:absolute;
+	top:150px;
+	z-index:5;
+}
+.main-content-pnul>li{
+	width:20px;
+	height:48px;
+	margin:0px;
+	padding:0px;
+	//outline:1px solid red;
+}
+
+.main-content-pnul>li:first-child{
+	float:left;
+}
+.main-content-pnul>li+li{
+	float:right;
+}
+
+.inner, .nav-bottom-left-inner{
+	position:relative;
+	overflow:hidden;
+}
+.nav-bottom-left-inner{
+	outline:5px solid rgb(20,220,220);
+}
+.outer{
+	    width:320px;
+		height:170px;
+		background-color:green;
+		opacity:0.5;
+		position:absolute;
+		top:0px;
+		left:-320px;
+		z-index:6;	
+}
+.nav-bottom-left-outer{
+	width:100%;
+    height:100%;
+	background-color:rgb(20,220,220);
+	opacity:0.5;
+	position:absolute;
+	top:0px;
+	left:-79px;
+	z-index:6;
+}
