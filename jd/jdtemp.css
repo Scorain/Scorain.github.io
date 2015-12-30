@@ -1,0 +1,155 @@
+
+.jdf{
+	width:1212px;
+	margin:0 auto;
+	
+}
+.jdf-top{
+	width:100%;
+	height:40px;
+	border-bottom:1px solid red;
+	overflow:hidden;
+	position:relative;
+}
+.jdf-left{
+	float:left;
+}
+.jdf-right{
+	overflow:hidden;
+}
+
+
+
+.jdf-top-img{
+	float:left;
+	//width:40px;
+	//height:40px;
+}
+.jdf-top-title{
+	float:left;
+	height:40px;
+	line-height:40px;
+	//outline:1px solid red;
+	font-size:20px;
+	color:rgb(100,100,100);
+}
+.jdf-top-right{
+	//position:absolute;
+	//right:0px;
+	//bottom:0px;
+	//z-index:2;
+	height:33px;
+	margin-top:6px;
+	line-height:33px;
+	float:right;
+	border-top:1px solid rgb(230,230,230);
+	border-left:1px solid rgb(230,230,230);
+	border-right:1px solid rgb(230,230,230);
+}
+.jdf-top-right li:nth-child(2n-1){
+	float:left;
+	padding:0 15px;
+	margin:0 -4px;
+	//outline:1px solid red;
+	font-size:14px;
+	color:rgb(12,12,12);
+}
+.jdf-top-right li:nth-child(2n){
+	float:left;
+	font-size:20px;
+	color:rgb(180,180,180);
+}
+
+
+
+.jdf-left-t, .jdf-left-m, .jdf-left-b{
+	//display:inline-block;
+	width:100%;
+	float:left;
+}
+.jdf-left-t{
+	display:block;
+	//width:100%;
+	//float:left;
+}
+.jdf-left-style1{
+	width:100%;
+	height:470px;
+	//outline:1px solid red;
+	overflow:hidden;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+
+
+.jdf-m-list{
+	float:left;
+	width:90px;
+	height:40px;
+	margin:3px 10px 0 10px;
+	//outline:1px solid black;
+}
+.jdf-m-list img{
+	float:left;
+	margin:5px 7px;
+}
+.jdf-m-list span{
+	//display:table;
+	float:left;
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+	//margin-left:5px;
+}
+.jdf-m-list span:hover{
+	color:red;
+}
+
+
+.jdf-b-div{
+	width:42%;
+	//height:100px;
+	margin:15px 0px 15px 16px;
+	float:left;
+	//outline:1px solid red;
+}
+.jdf-b-div li{
+	//width:40%;
+	height:25px;
+	line-height:25px;
+	font-size:12px;
+	margin-right:15px;
+	float:left;
+	//outline:1px solid red;
+}
+.jdf-b-div li>a:hover{
+	color:red;
+}
+
+
+
+.jdf-right-firstlist{
+	float:left;
+	overflow:hidden;
+	outline:1px solid rgb(230,230,230);
+}
+
+
+.jdf-ad-bottom{
+	width:1212px;
+	height:60px;
+	margin:10px auto;
+	background-color:rgb(245,245,245);
+}
+.jdf-ad-bottom li{
+	float:left;
+	//width:120px;
+	height:40px;
+	margin:10px 0px;
+	padding:0px 10px;
+	//outline:1px solid red;
+	//background-color:rgb(220,220,220);
+}
+.jdf-ad-bottom li+li{
+	border-left:1px dashed rgb(180,180,180);
+}
