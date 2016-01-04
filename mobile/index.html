@@ -1,10 +1,14 @@
 
-<!-- 2015/12/31 -->
+<!-- 2016/1/4 -->
 <!doctype html>
 <html>
   <head>
     <meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width"/>
+	<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="format-detection" content="email=no"/>
 	<title>resume</title>
 	<style>
 	*{
@@ -37,13 +41,12 @@
 	}
 	
 	.logo{
-	width:40vw;
-	height:40vw;
+	width:35vw;
+	height:35vw;
 	margin:8vh auto 0 auto;
 	border-radius:50%;
 	box-shadow:0.5rem 0.5rem 0.8rem rgb(160,215,200);
 	overflow:hidden;
-	//outline:0.1rem solid red;
 	}
 	.logo img{
 	width:100%;
@@ -61,8 +64,7 @@
 	font-weight:normal;
 	}
 	.my-mess{
-	//width:90vw;
-	margin-top:2rem;
+	margin-top:1.5rem;
 	font-size:1rem;
 	text-align:center;
 	font-weight:normal;
@@ -71,36 +73,35 @@
 	}
 	.container button{
 	width:64vw;
-	height:3rem;
-	position:absolute;
-	left:18vw;
-	bottom:2rem;
+	height:2.5rem;
+	display:block;
+	margin:3rem auto;
 	border-radius:0.2rem;
 	font-size:1.2rem;
 	font-weight:bold;
 	background-color:rgb(200,150,100);
 	}
 	
-	#content-page{
+	#content-page, #skill-page, #contact-me{
 	width:100vw;
 	height:100vh;
 	overflow:hidden;
-	background-image: url("image/bgi.jpg");
 	background-repeat:no-repeat;
 	background-size:100% 100%;
+	}
+	#content-page{
+	background-image: url("image/briefbg.jpg");
 	}
 	.brief-infor{
 	width:90vw;
 	height:70vh;
 	margin:8vh auto;
-	//outline:1px solid red;
 	display:flex;
 	display:-webkit-flex;
 	flex-flow:column nowrap;
 	}
 	.brief-infor>div{
 	width:100%;
-	//outline:1px solid red;
 	flex:1 1;
 	}
 	
@@ -123,45 +124,36 @@
 	height:15vw;
 	}
 	.logo-text{
-	//padding:1rem;
 	font-size:1rem;
 	text-indent:1rem;
-	}
-	
+	}	
 	#skill-page{
-	  width:100vw;
-	  height:100vh;
-	  overflow:hidden;
-	  background-image: url("image/skillbg.jpg");
-	  background-repeat:no-repeat;
-	  background-size:100% 100%;
+	  background-image: url("image/contactbg.jpg");
 	}
 	.skill-chart{
 	  width:80vw;
 	  height:60vh;
-	  overflow:hidden;
-	  //border:0.1rem solid grey;
-	  
+	  overflow:hidden;	  
 	  margin:2rem auto;
 	}
 	.skill-chart ul{
-	  height:90%;
+	  height:54vw;
 	  list-style:none;
 	  margin:5% 0;
 	  padding:0;
-	  //outline:1px solid red;
 	}
 	.skill-chart li{
-	  height:25%;
-	  //outline:1px solid blue;
+	  height:12.5vh;
+	  width:80vw;
 	}
 	.skill-score{
-	height:60%;
+	height:7.5vh;
 	width:80vw;
+	overflow:hidden;
 	background-color:white;
 	}
 	.skill-bar{
-	  height:100%;	  
+	  height:7.5vh;	  
 	  background-color:blue;
 	  float:left;
 	}
@@ -265,17 +257,10 @@
 	}
 	.skill-intro{
 	  line-height:6vh;
-	  //margin-left:0.5rem;
 	  font-size:0.8rem;
-	}
-	
+	}	
 	#contact-me{
-	  width:100vw;
-	  height:100vh;
-	  overflow:hidden;
-	  background-image: url("image/contactbg.jpg");
-	  background-repeat:no-repeat;
-	  background-size:100% 100%;
+	  background-image: url("image/skillbg.jpg");
 	}
 	.resume-tail{
 	  width:80vw;
