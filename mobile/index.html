@@ -1,0 +1,406 @@
+
+<!-- 2015/12/31 -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width"/>
+	<title>resume</title>
+	<style>
+	*{
+	margin:0px;
+	padding:0px;
+	}
+	h1{
+	font-size:1.5rem;
+	margin:1rem auto auto 1rem;
+	}
+	header{
+	width:100vw;
+	height:8vh;
+	background-color:rgb(50,80,100);
+	color:white;
+	line-height:8vh;
+	font-size:1.8rem;
+	text-align:center;
+	}
+	footer{
+	  font-size:1.6rem;
+	  margin:1rem;
+	  text-align:center;
+	}
+	.container{
+	width:100vw;
+	height:92vh;
+	background-color:rgb(200,255,230);
+	overflow:hidden;
+	}
+	
+	.logo{
+	width:40vw;
+	height:40vw;
+	margin:8vh auto 0 auto;
+	border-radius:50%;
+	box-shadow:0.5rem 0.5rem 0.8rem rgb(160,215,200);
+	overflow:hidden;
+	//outline:0.1rem solid red;
+	}
+	.logo img{
+	width:100%;
+	height:100%;
+	}
+	.my-name{
+	margin:1rem auto;
+	font-size:2rem;
+	font-weight:bold;
+	text-align:center;
+	}
+	.my-address{
+	font-size:1.2rem;
+	text-align:center;
+	font-weight:normal;
+	}
+	.my-mess{
+	//width:90vw;
+	margin-top:2rem;
+	font-size:1rem;
+	text-align:center;
+	font-weight:normal;
+	overflow:hidden;
+	line-height:1.2rem;
+	}
+	.container button{
+	width:64vw;
+	height:3rem;
+	position:absolute;
+	left:18vw;
+	bottom:2rem;
+	border-radius:0.2rem;
+	font-size:1.2rem;
+	font-weight:bold;
+	background-color:rgb(200,150,100);
+	}
+	
+	#content-page{
+	width:100vw;
+	height:100vh;
+	overflow:hidden;
+	background-image: url("image/bgi.jpg");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	}
+	.brief-infor{
+	width:90vw;
+	height:70vh;
+	margin:8vh auto;
+	//outline:1px solid red;
+	display:flex;
+	display:-webkit-flex;
+	flex-flow:column nowrap;
+	}
+	.brief-infor>div{
+	width:100%;
+	//outline:1px solid red;
+	flex:1 1;
+	}
+	
+	.logo-cont{
+	width:15vw;
+	height:15vw;
+	margin:0 1rem 0.2rem 1rem;	
+	}
+	.denza-cont{
+	float:left;
+	}
+	.swjtu-cont{
+	float:right;
+	}
+	.hh-cont{
+	float:left;
+	}
+	.logo-cont img{
+	width:15vw;
+	height:15vw;
+	}
+	.logo-text{
+	//padding:1rem;
+	font-size:1rem;
+	text-indent:1rem;
+	}
+	
+	#skill-page{
+	  width:100vw;
+	  height:100vh;
+	  overflow:hidden;
+	  background-image: url("image/skillbg.jpg");
+	  background-repeat:no-repeat;
+	  background-size:100% 100%;
+	}
+	.skill-chart{
+	  width:80vw;
+	  height:60vh;
+	  overflow:hidden;
+	  //border:0.1rem solid grey;
+	  
+	  margin:2rem auto;
+	}
+	.skill-chart ul{
+	  height:90%;
+	  list-style:none;
+	  margin:5% 0;
+	  padding:0;
+	  //outline:1px solid red;
+	}
+	.skill-chart li{
+	  height:25%;
+	  //outline:1px solid blue;
+	}
+	.skill-score{
+	height:60%;
+	width:80vw;
+	background-color:white;
+	}
+	.skill-bar{
+	  height:100%;	  
+	  background-color:blue;
+	  float:left;
+	}
+	.skill-one{
+	  width:50vw;
+	  animation:skillone 2s;
+	  -moz-animation:skillone 2s;
+	  -webkit-animation:skillone 2s;
+	  -o-animation:skillone 2s;
+	}
+	@keyframes skillone{
+	  from {width:0vw;}
+	  to {width:50vw}
+	}
+	@-moz-keyframes skillone{
+	  from {width:0vw;}
+	  to {width:50vw}
+	}
+	@-webkit-keyframes skillone{
+	  from {width:0vw;}
+	  to {width:50vw}
+	}
+	@-o-keyframes skillone{
+	  from {width:0vw;}
+	  to {width:50vw}
+	}
+	.skill-two{
+	  width:55vw;
+	  animation:skilltwo 2s;
+	  -moz-animation:skilltwo 2s;
+	  -webkit-animation:skilltwo 2s;
+	  -o-animation:skilltwo 2s;
+	}
+	@keyframes skilltwo{
+	  from {width:0vw;}
+	  to {width:55vw}
+	}
+	@-moz-keyframes skilltwo{
+	  from {width:0vw;}
+	  to {width:55vw}
+	}
+	@-webkit-keyframes skilltwo{
+	  from {width:0vw;}
+	  to {width:55vw}
+	}
+	@-o-keyframes skilltwo{
+	  from {width:0vw;}
+	  to {width:55vw}
+	}
+	.skill-three{
+	  width:30vw;
+	  animation:skillthree 2s;
+	  -moz-animation:skillthree 2s;
+	  -webkit-animation:skillthree 2s;
+	  -o-animation:skillthree 2s;
+	}
+	@keyframes skillthree{
+	  from {width:0vw;}
+	  to {width:30vw}
+	}
+	@-moz-keyframes skillthree{
+	  from {width:0vw;}
+	  to {width:30vw}
+	}
+	@-webkit-keyframes skillthree{
+	  from {width:0vw;}
+	  to {width:30vw}
+	}
+	@-o-keyframes skillthree{
+	  from {width:0vw;}
+	  to {width:30vw}
+	}
+	.skill-four{
+	  width:20vw;
+	  animation:skillfour 2s;
+	  -moz-animation:skillfour 2s;
+	  -webkit-animation:skillfour 2s;
+	  -o-animation:skillfour 2s;
+	}
+	@keyframes skillfour{
+	  from {width:0vw;}
+	  to {width:20vw}
+	}
+	@-moz-keyframes skillfour{
+	  from {width:0vw;}
+	  to {width:20vw}
+	}
+	@-webkit-keyframes skillfour{
+	  from {width:0vw;}
+	  to {width:20vw}
+	}
+	@-o-keyframes skilltfour{
+	  from {width:0vw;}
+	  to {width:20vw}
+	}
+	.skill-score p{
+	  line-height:8vh;
+	  margin-left:1rem;
+	  font-size:1.5rem;
+	  float:left;
+	}
+	.skill-intro{
+	  line-height:6vh;
+	  //margin-left:0.5rem;
+	  font-size:0.8rem;
+	}
+	
+	#contact-me{
+	  width:100vw;
+	  height:100vh;
+	  overflow:hidden;
+	  background-image: url("image/contactbg.jpg");
+	  background-repeat:no-repeat;
+	  background-size:100% 100%;
+	}
+	.resume-tail{
+	  width:80vw;
+	  margin:3rem auto;
+	}
+	.resume-tail>p{
+	  font-size:1.4rem;
+	  text-indent:1em;
+	  margin-bottom:1rem;
+	}
+	.resume-tail>ul{
+	  margin-left:2rem;
+	}
+	.resume-tail li{
+	  font-size:1.2rem;
+	  margin-bottom:0.2rem;
+	}
+	
+	</style>
+  </head>
+  <body>
+    
+
+	<header>My Resume</header>
+	<div class="container">
+	  <div class="logo">
+	    <img src="image/logo.jpg"/>
+	  </div>
+	  <hgroup>
+	    <h1 class="my-name">Yuan Sun</h1>
+	    <h2 class="my-address">Lived in ShenZhen,China</h2>
+	  </hgroup>
+	  <div class="my-mess">
+	    <p>I am a Web Frontend Developer.</p>
+	    <p>And I am a fresh one.</p>
+	    <p>Want to know more about me?</p>
+	  </div>
+	  <button type="button">Read More About Me</button>
+	</div>
+	
+	<div id="content-page">
+	  <h1>Brief Information</h1>
+	  <hr/>
+	  <div class="brief-infor">
+	    <div>
+		  <div class="logo-cont denza-cont">
+		   <img src="image/denza.jpg"/>
+		  </div>
+		  <div class="logo-text">
+		    Serviced for DENZA from Aug,2014 to Nov,2015 after graduated. In BYD, I response for compiling mearsuring programe and continuous improvement of QZ value. 
+		  </div>
+		</div>
+	    <div>
+		  <div class="logo-cont swjtu-cont">
+		   <img src="image/swjtu.jpg"/>
+		  </div>
+		  <div class="logo-text">
+		    Graduated from swjtu at 2014 and entrance at 2010. At college, My major is Materials Science and Engineering.
+		  </div>
+		</div>
+	    <div>
+		  <div class="logo-cont hh-cont">
+		   <img src="image/hh.jpg"/>
+		  </div>
+		  <div class="logo-text">
+		    Born at HongHu city,HuBei province. I grew up and finished my high school study in my hometown before university.
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<div id="skill-page">
+	  <h1>My Skills</h1>
+	  <hr/>
+	  <div class="skill-chart">
+	    <ul>
+		  <li>
+		    <div class="skill-score">
+			  <div class="skill-bar skill-one"></div>
+			  <p>HTML</p>
+			</div>
+		    <div class="skill-intro">Know HTML Tags´s semanteme well</div>
+		  </li>
+		  <li>
+		    <div class="skill-score">
+			  <div class="skill-bar skill-two"></div>
+			  <p>CSS</p>
+			</div>
+		    <div class="skill-intro">Can finish commom style and layout</div>
+		  </li>
+		  <li>
+		    <div class="skill-score">
+			  <div class="skill-bar skill-three"></div>
+			  <p>JS</p>
+			</div>
+		    <div class="skill-intro">Can finish common effect demo</div>
+		  </li>
+		  <li>
+		    <div class="skill-score">
+			  <div class="skill-bar skill-four"></div>
+			  <p>PHP</p>
+			</div>
+		    <div class="skill-intro">See essential syntax of PHP</div>
+		  </li>
+		</ul>
+	  </div>
+	</div>
+	
+	<div id="contact-me">
+	  <h1>Contact Me</h1>
+	  <hr/>
+	  <div class="resume-tail">
+	    <p>If you´re interested in me, you can contact with me through follow styles </p>
+		<ul>
+		  <li>Tel:13714687255</li>
+		  <li>Email:617108090@qq.com</li>
+		  <li>QQ:617108090</li>
+		  <li>wechat:Surain</li>
+		  <li>Github:<a href="http://github.com/Scorain">Scorain</a></li>
+		</ul>
+	  </div>
+	  <footer>Thank You For Your Attention!</footer>
+	</div>
+
+	
+  
+  </body>
+</html>  
