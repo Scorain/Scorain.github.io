@@ -604,6 +604,12 @@ nav li>a{
 	to {-webkit-transform:scale(1)}
 }
 @-o-keyframes banner_img{
+<<<<<<< HEAD
 	from {-o-transform:scale(1.1)}
 	to {-o-transform:scale(1)}
 }
+=======
+	from {transform:scale(1.1);}
+	to {transform:scale(1);}
+}
+>>>>>>> origin/master
