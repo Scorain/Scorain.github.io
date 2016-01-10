@@ -2,10 +2,38 @@
 (function($){
 	$(window).ready(function(){
 		
+		(function(){			
+			var dom=$("span",".aftBan");
+			var getJson=function(index){
+				var _json={};
+				_json.initial_val=0;
+				_json.frequent=33;
+				_json.final_val=parseFloat(dom[index].innerHTML);
+				_json.speed=Math.ceil(_json.final_val/100);
+				return _json
+			};						
+			var numberCopter=function(json,dom){
+ 	            (function(){
+					json.initial_val+=json.speed;
+	                if(json.initial_val<=json.final_val){	                    
+	                    dom.innerHTML=json.initial_val;
+	                    setTimeout(arguments.callee,json.frequent);
+	                }else{
+	                    dom.innerHTML=json.final_val;
+	                };
+	            })();		
+            };
+			$("img",".banner_p2p").get(0).onload=function(){
+				for(var i=0;i<dom.length;i++){
+				    numberCopter(getJson(i),dom.get(i));
+			    };
+			};
+		})();
 		
 		
 		$(window).scroll(function(){
 			//alert(document.documentElement.scrollTop);
+			
 			if(document.documentElement.scrollTop >= 150 ||
 			  document.body.scrollTop >= 150){
 				$(".p2p_toLeftA1").addClass("p2p_toLeftAnimate1");
