@@ -23,11 +23,9 @@
 	                };
 	            })();		
             };
-			$("img",".banner_p2p").get(0).onload=function(){
-				for(var i=0;i<dom.length;i++){
-				    numberCopter(getJson(i),dom.get(i));
-			    };
-			};
+			for(var i=0;i<dom.length;i++){
+			    numberCopter(getJson(i),dom.get(i));
+		    };
 		})();
 		
 		
