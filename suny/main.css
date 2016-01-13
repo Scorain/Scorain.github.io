@@ -1,0 +1,316 @@
+
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	width:100vw;
+	height:100vh;
+	overflow:hidden;
+}
+.bg_img{
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:-999;
+	width:100vw;
+	height:100vh;
+	overflow:hidden;
+	background:url("bg_img.jpg") no-repeat center center;
+	background-size:cover;
+	outline:1px solid red;
+}
+.bg_darker{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:-99;
+	width:100vw;
+	height:100vh;
+	background-color:rgb(0,0,0);
+}
+.bg_canvas{
+	position:absolute;
+	top:100vh;
+	left:0;
+	z-index:-9;
+	width:100vw;
+	height:100vh;
+	overflow:hidden;
+}
+.container{
+	width:100vw;
+	height:96vh;
+	margin:2vh 0;
+	overflow:hidden;
+}
+.logo{
+	width:120px;
+	height:120px;
+	min-height:100px;
+	max-height:150px;
+	margin:1.5rem auto 0 auto;
+	border-radius:50%;
+	overflow:hidden;
+}
+.logo img{
+	width:100%;	
+	height:100%;	
+}
+hgroup{
+	text-align:center;
+	overflow:hidden;
+	margin-top:1rem;
+}
+hgroup h1{
+	font-size:2.5rem;
+	color:white;
+}
+hgroup h3{
+	font-size:1.5rem;
+	color:rgb(150,200,250);
+	letter-spacing:0.8rem;
+}
+.my_link{
+	text-align:center;
+	width:100vw;
+	height:33vh;
+	margin-top:1rem;	
+}
+
+.footer{
+	width:100vw;
+	text-align:center;
+	color:white;
+	font-size:0.8rem;
+	line-height:1rem;
+}
+.link_logo, .link_logo_small{
+	list-style:none;
+	display:inline-block;
+	overflow:hidden;
+	margin:0.5rem auto;
+}
+.link_logo li{
+	float:left;
+	width:10vw;
+	max-width:5rem;
+	height:10vw;
+	max-height:5rem;
+	margin:0.2rem 0.5rem 0.2rem 0.5rem;
+	
+}
+.link_logo li:nth-child(2n-1){
+	transition:all 1s;
+}
+.link_logo li:nth-child(2n-1):hover{
+	transform:rotate(720deg);
+}
+.link_logo li:nth-child(2n){
+	transition:all 1s;
+}
+.link_logo li:nth-child(2n):hover{
+	transform:rotateY(720deg);
+}
+.link_logo_small li{
+	float:left;
+	width:4vw;
+	max-width:2.5rem;
+	height:4vw;
+	max-height:2.5rem;
+	margin:0.2rem 0.8rem 0.2rem 0.8rem;
+}
+
+
+.preloader{
+	width:100vw;
+	height:100vh;
+	background-color:black;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:9;
+}
+
+
+
+
+
+.preloader img{
+	display:block;
+	margin:30vh auto;
+	animation:preloaderA 1s infinite;
+	-moz-animation:preloaderA 1s infinite;
+	-webkit-animation:preloaderA 1s infinite;
+	-o-animation:preloaderA 1s infinite;
+}
+.darker_animate{
+	animation:darkerA 5s forwards;
+	-moz-animation:darkerA 5s forwards;
+	-webkit-animation:darkerA 5s forwards;
+	-o-animation:darkerA 5s forwards;
+}
+.canvas_animate{
+	animation:canvasA 3s 2s forwards;
+	-moz-animation:canvasA 3s 2s forwards;
+	-webkit-animation:canvasA 3s 2s forwards;
+	-o-animation:canvasA 3s 2s forwards;
+}
+.logo_animate{
+	position:relative;
+	top:-10vh;
+	opacity:0;
+	animation:logoA 1s 4s forwards;
+	-moz-animation:logoA 1s 4s forwards;
+	-webkit-animation:logoA 1s 4s forwards;
+	-o-animation:logoA 1s 4s forwards;
+}
+.hgroup_animate{
+	position:relative;
+	left:-50vw;
+	opacity:0;
+	animation:hgroupA 1s 4s forwards;
+	-moz-animation:hgroupA 1s 4s forwards;
+	-webkit-animation:hgroupA 1s 4s forwards;
+	-o-animation:hgroupA 1s 4s forwards;
+}
+.link_animate{
+	position:relative;
+	left:50vw;
+	opacity:0;
+	animation:linkA 1s 4s forwards;
+	-moz-animation:linkA 1s 4s forwards;
+	-webkit-animation:linkA 1s 4s forwards;
+	-o-animation:linkA 1s 4s forwards;
+}
+.footer_animate{
+	position:relative;
+	top:10vh;
+	opacity:0;
+	animation:footerA 1s 4s forwards;
+	-moz-animation:footerA 1s 4s forwards;
+	-webkit-animation:footerA 1s 4s forwards;
+	-o-animation:footerA 1s 4s forwards;
+}
+
+
+
+
+
+
+@keyframes preloaderA{
+	from {transform:rotate(0deg)}
+	to {transform:rotate(360deg)}
+}
+@-moz-keyframes preloaderA{
+	from {-moz-transform:rotate(0deg)}
+	to {-moz-transform:rotate(360deg)}
+}
+@-webkit-keyframes preloaderA{
+	from {-webkit-transform:rotate(0deg)}
+	to {-webkit-transform:rotate(360deg)}
+}
+@-o-keyframes preloaderA{
+	from {-o-transform:rotate(0deg)}
+	to {-o-transform:rotate(360deg)}
+}
+@keyframes darkerA{
+	from {opacity:1}
+	to {opacity:0.5}
+}
+@-moz-keyframes darkerA{
+	from {opacity:1}
+	to {opacity:0.5}
+}
+@-webkit-keyframes darkerA{
+	from {opacity:1}
+	to {opacity:0.5}
+}
+@-o-keyframes darkerA{
+	from {opacity:1}
+	to {opacity:0.5}
+}
+@keyframes canvasA{
+	from {top:100vh}
+	to {top:0}
+}
+@-moz-keyframes canvasA{
+	from {top:100vh}
+	to {top:0}
+}
+@-webkit-keyframes canvasA{
+	from {top:100vh}
+	to {top:0}
+}
+@-o-keyframes canvasA{
+	from {top:100vh}
+	to {top:0}
+}
+@keyframes logoA{
+	from {top:-10vh;opacity:0}
+	to {top:0;opacity:0.7}
+}
+@-moz-keyframes logoA{
+	from {top:-10vh;opacity:0}
+	to {top:0;opacity:0.7}
+}
+@-webkit-keyframes logoA{
+	from {top:-10vh;opacity:0}
+	to {top:0;opacity:0.7}
+}
+@-o-keyframes logoA{
+	from {top:-10vh;opacity:0}
+	to {top:0;opacity:0.7}
+}
+@keyframes hgroupA{
+	from {left:-30vw;opacity:0}
+	to {left:0;opacity:1}
+}
+@-moz-keyframes hgroupA{
+	from {left:-30vw;opacity:0}
+	to {left:0;opacity:1}
+}
+@-webkit-keyframes hgroupA{
+	from {left:-30vw;opacity:0}
+	to {left:0;opacity:1}
+}
+@-o-keyframes hgroupA{
+	from {left:-30vw;opacity:0}
+	to {left:0;opacity:1}
+}
+@keyframes linkA{
+	from {left:30vw;opacity:0}
+	to {left:0;opacity:1}
+}
+@-moz-keyframes linkA{
+	from {left:30vw;opacity:0}
+	to {left:0;opacity:1}
+}
+@-webkit-keyframes linkA{
+	from {left:30vw;opacity:0}
+	to {left:0;opacity:1}
+}
+@-o-keyframes linkA{
+	from {left:30vw;opacity:0}
+	to {left:0;opacity:1}
+}
+@keyframes footerA{
+	from {top:10vh;opacity:0}
+	to {top:0;opacity:1}
+}
+@-moz-keyframes footerA{
+	from {top:10vh;opacity:0}
+	to {top:0;opacity:1}
+}
+
+@-webkit-keyframes footerA{
+	from {top:10vh;opacity:0}
+	to {top:0;opacity:1}
+}
+
+@-o-keyframes footerA{
+	from {top:10vh;opacity:0}
+	to {top:0;opacity:1}
+}
+
+
