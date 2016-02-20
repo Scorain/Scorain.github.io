@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no"/>
+	<title>计算器</title>
+	<style>
+	*{margin:0px;padding:0px}
+	.container {width:100vw;max-width:450px;margin:0 auto;background-color:rgb(200,200,200);overflow:hidden}
+	.up{width:80%;height:60px;margin:80px auto 40px auto;padding-right:1rem;border:1px solid black;background-color:rgb(230,240,250);font-size:2rem;text-align:right;line-height:60px}
+	.down{width:100%;margin:30px auto}
+	.down table{width:100%}
+	.down tr{height:12vh}
+	.keyboard{width:15vw;height:10vw;max-width:60px;max-height:40px;margin:0 auto;text-align:center;font-size:1.2rem;line-height:2.4rem;border:1px solid black;cursor:pointer;border-radius:5px;background-color:rgb(150,160,170)}
+	</style>
+  </head>
+  <body>
+    <div class="container">
+	  <div class="up"></div>
+	  <div class="down">
+	    <table>
+		  <tr>
+		    <td><div class="keyboard">1</div></td>
+		    <td><div class="keyboard">2</div></td>
+		    <td><div class="keyboard">3</div></td>
+		    <td><div class="keyboard">+</div></td>
+		  </tr>
+		  <tr>
+		    <td><div class="keyboard">4</div></td>
+		    <td><div class="keyboard">5</div></td>
+		    <td><div class="keyboard">6</div></td>
+		    <td><div class="keyboard">-</div></td>
+		  </tr>
+		  <tr>
+		    <td><div class="keyboard">7</div></td>
+		    <td><div class="keyboard">8</div></td>
+		    <td><div class="keyboard">9</div></td>
+		    <td><div class="keyboard">*</div></td>
+		  </tr>
+		  <tr>
+		    <td><div class="keyboard">0</div></td>
+		    <td><div class="keyboard">clear</div></td>
+		    <td><div class="keyboard">=</div></td>
+		    <td><div class="keyboard">/</div></td>
+		  </tr>
+		</table>	    
+	  </div>
+	</div>	
+	<script>
+	window.onload=function(){
+	    (function(){
+		    var cal=document.getElementsByClassName("container")[0];
+			cal.style.height=window.innerHeight+"px";
+			window.onresize=function(){
+			    cal.style.height=window.innerHeight+"px";
+			};	
+		})();
+		(function(){
+		    var showBoard=document.getElementsByClassName("up")[0]; 
+	        var keyBoards=document.getElementsByClassName("keyboard");
+	        var showString="";
+	        for(var i=0;i<keyBoards.length;i++){	
+	            keyBoards[i].onclick=function(){
+	        	    if(this.innerHTML=="clear"){
+	        		    showString="";
+	        			showBoard.innerHTML=showString;
+	        		}else if(this.innerHTML=="="){
+	        			if(eval(showString)){
+	        			    showBoard.innerHTML=eval(showString);
+	        				showString="";
+	        			};				
+	        		}else{
+	        		    showString+=this.innerHTML;
+	        			showBoard.innerHTML=showString;
+	        		};
+	        	};	    
+	        };				
+		})();
+	}
+	</script>
+  </body>
+</html>
