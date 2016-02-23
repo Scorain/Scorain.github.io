@@ -1,0 +1,135 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+	<title>resume</title>
+	<link rel="stylesheet" type="text/css" href="styles/reuse.css"/>
+	<link rel="stylesheet" type="text/css" href="styles/resume.css"/>
+  </head>
+  <body>
+    <div class="left-side full-H">
+	  <div class="left-top">
+	    <canvas width="100px" height="100px" style="margin:24px" id="myClock">your browers is not support canvas!</canvas>
+	  </div>
+	  <ul>
+	    <li><a href="index.html">HOME</a></li>
+	    <li><a href="resume.html" id="page-now">RESUME</a></li>
+	    <li><a href="work.html">WORKS</a></li>
+	    <li><a href="contact.html">CONTACT</a></li>
+	  </ul>
+	  <img src="images/wechat.jpeg"/>
+	  <ul class="link-ul">
+	    <li>LINK</li>
+	    <li><a href="#">GITHUB</a></li>
+	  </ul>
+	</div>
+	<div class="right-side">
+	  <div class="my-resume">
+	    <div class="top">
+		  <div class="logo">
+		    <div><img src="images/logo.jpg"/></div>
+			<h2>孙 元</h2>
+			<h3>前端开发</h3>
+		  </div>
+		  <div class="about-me">
+		    <h3>About me</h3>
+			<p>未来要成为一位高级前端开发工程师的90后，快乐工作，快乐生活！</p>
+		  </div>
+		  <div class="my-message">
+		    <ul>
+			  <li>
+			    <div class="message1"></div>
+				1990.12.30
+			  </li>
+			  <li>
+			    <div class="message2"></div>
+				13714687255
+			  </li>
+			  <li>
+			    <div class="message3"></div>
+				617108090@qq.com
+			  </li>
+			  <li>
+			    <div class="message4"></div>
+				深圳市宝安区
+			  </li>
+			</ul>
+		  </div>		  
+		</div>
+		<div class="experience">
+		  <div class="ex-title"><div><img src="images/experedu.jpg"/></div></div>
+		  <div class="middle-column"></div>
+		  <div class="exper1 experfir">
+		    <div class="exper1-left">
+			  <h3>比亚迪<span>(web前端开发)</span></h3>
+			  <p>负责公司内部门户系统(OA)前端开发工作。主要工作内容包括：编写公司内部活动、宣传、消息发布等HTML页面；根据需求，选择合适的技术如CSS3，原生JavaScript，Jquery等实现常用的动画和交互效果；利用canvas、SVG、以及图形化工具echarts.js等技术实现常用的图表。</p>
+			</div>
+			<div class="exper1-right experfir-right">
+			  <p>Mar.<span>15</span><br/>-<br/>Dec.<span>15</span></p> 
+			</div>
+		  </div>
+		  <div class="exper1 expersec">
+		    <div class="exper1-left">
+			  <h3>比亚迪<span>(测量工程师)</span></h3>
+			  <p>负责测量程序的编写和维护。主要工作内容包括：使用DMIS语言及iDA离线编程软件编写符合需求的测量程序；维护及优化已有的测量程序；分析测量数据及测量报告给出合理建议。</p>
+			</div>
+			<div class="exper1-right expersec-right">
+			  <p>Aug.<span>14</span><br/>-<br/>Mar.<span>15</span></p> 
+			</div>
+		  </div>
+		  <div class="edu">
+		    <div class="edu-right">
+			  <h3>西南交通大学<span>(材料学院)</span></h3>
+			  <p>本人于2010年至2014年就读于西南交通大学材料科学与工程学院，在校期间，初步接触了前端，使用DreamWeaver制作一些社团页面</p>
+			</div>
+			<div class="edu-left">
+			  <p>Sep.<span>10</span><br/>-<br/>Jul.<span>14</span></p> 
+			</div>
+		  </div>
+		</div>
+		<div class="footer">
+		  <div class="foo-left">
+		    <div class="foo-title"><img src="images/skill.jpg"/></div>
+			<ul>
+			  <li><div class="s-1">HTML5</div></li>
+			  <li><div class="s-2">CSS3</div></li>
+			  <li><div class="s-3">JS</div></li>
+			  <li><div class="s-4">JQuery</div></li>
+			</ul>
+		  </div>
+		  <div class="foo-right">
+		    <div class="foo-title"><img src="images/passion.jpg"/></div>
+			<ul>
+			  <li>
+			    <div class="p-1"></div>
+				<p>ListenMusic</p>
+			  </li>
+			  <li>
+			    <div class="p-2"></div>
+				<p>Travelling</p>
+			  </li>
+			  <li>
+			    <div class="p-3"></div>
+				<p>Reading</p>
+			  </li>
+			  <li>
+			    <div class="p-4"></div>
+				<p>Coding</p>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </body>
+  <script>
+    (function(){
+	    var leftSide=document.getElementsByClassName("left-side")[0];
+	    leftSide.style.height=window.innerHeight+"px";
+	    window.onresize=function(){
+	    	leftSide.style.height=window.innerHeight+"px";
+	    };	
+	})();
+  </script>
+  <script src="scripts/main.js"></script>
+</html>

@@ -1,0 +1,304 @@
+﻿
+.my-resume{
+	width:80%;
+	min-width:600px;
+	max-width:1000px;
+	margin-left:70px;
+}
+.top{
+	width:100%;
+	height:500px;
+	background-image:url("../images/topbg.jpg");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	position:relative;
+}
+.logo{
+	width:250px;
+	height:300px;
+	position:absolute;
+	top:100px;
+	left:10%;
+	border:5px solid rgb(240,240,240);
+	color:orange;
+	line-height:40px;
+	text-align:center;
+}
+.logo>h2{
+	font-size:32px;
+}
+.logo>h3{
+	font-size:24px;
+}
+.logo>div{
+	width:120px;
+	height:120px;
+	border:2px solid rgb(210,210,210);
+	margin:50px 65px 20px 65px;
+	overflow:hidden;
+	border-radius:50%;
+}
+.logo>div>img{
+	width:120px;
+	height:120px;
+}
+.about-me{
+	position:absolute;
+	top:100px;
+	left:55%;
+	width:250px;
+	height:80px;	
+}
+.about-me h3,.about-me p{
+	color:rgb(104,46,8);
+}
+.about-me h3{
+	line-height:24px;
+}
+.my-message{
+	width:250px;
+	height:220px;
+	position:absolute;
+	top:230px;
+	left:55%;
+}
+.my-message div{
+	width:30px;
+	height:30px;
+	overflow:hidden;
+	float:left;
+	background-image:url("../images/icon1.jpg");
+	background-size:cover;	
+}
+.message1{
+	background-position:0 0;
+}
+.message2{
+	background-position:0 -40px;
+}
+.message3{
+	background-position:0 -90px;
+}
+.message4{
+	background-position:0 -133px;
+}
+.my-message ul{
+	list-style:none;
+}
+.my-message li{
+	width:100%;
+	height:30px;
+	color:rgb(104,46,8);
+	line-height:30px;
+	font-size:16px;
+	text-indent:2rem;
+	border-bottom:2px solid rgb(230,230,230);
+}
+.experience{
+	width:100%;
+	height:800px;
+	overflow:hidden;
+	position:relative;
+}
+.ex-title{
+	width:100%;
+	height:133px;
+	overflow:hidden;
+	background-color:rgb(244,245,245);	
+}
+.ex-title>div{
+	width:500px;
+	height:33px;
+	margin:50px auto;	
+}
+.ex-title img{
+	width:100%;
+	height:100%;
+}
+.middle-column{
+	width:6px;
+	height:700px;
+	position:absolute;
+	top:50px;
+	left:50%;
+	z-index:3;
+	background-color:rgb(185,46,40);
+	border-radius:3px;
+}
+.exper1{
+	width:350px;
+	background-image:url(../images/exper1.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	right:52%;
+	z-index:5;
+}
+.experfir{
+	top:140px;
+	height:200px;
+}
+.expersec{
+	top:380px;
+	height:150px;
+}
+
+.exper1-left{
+	width:220px;
+	height:100%;
+	margin:20px 0 0 15px;
+}
+.exper1-left span{
+	font-size:1rem;
+}
+.exper1-left p{
+	font-size:0.75rem;
+	text-indent:2rem;
+	color:rgb(150,150,150);
+}
+.exper1-right{
+	width:100px;
+	height:150px;
+	position:absolute;
+	right:10px;
+	z-index:9;
+	color:rgb(194,84,10);
+	font-weight:bold;
+}
+.experfir-right{
+	top:50px;
+}
+.expersec-right{
+	top:30px;
+}
+.exper1-right p{
+	font-size:1.2rem;
+}
+.exper1-right span{
+	font-size:1.5rem;
+}
+
+.edu{
+	width:350px;
+	height:160px;
+	background-image:url(../images/exper2.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	top:540px;
+	left:52%;
+	z-index:5;
+}
+
+.edu-right{
+	width:200px;
+	height:100%;
+	position:absolute;
+	top:30px;
+	right:30px;
+	z-index:9;
+}
+.edu-right span{
+	font-size:1rem;
+}
+.edu-right p{
+	font-size:0.75rem;
+	text-indent:2rem;
+	color:rgb(150,150,150);
+}
+.edu-left{
+	width:80px;
+	height:150px;
+	margin:30px 0 0 40px;	
+	color:rgb(194,84,10);
+	font-weight:bold;
+}
+.edu-left p{
+	font-size:1.2rem;
+}
+.edu-left span{
+	font-size:1.5rem;
+}
+
+.footer{
+	width:100%;
+	height:180px;
+}
+.foo-left{
+	width:50%;
+	height:180px;
+	float:left;
+}
+.foo-right{
+	overflow:hidden;
+	height:180px;
+}
+.foo-title{
+	width:120px;
+	height:30px;
+	margin-left:20px;
+}
+.foo-title img{
+	width:100%;
+	height:100%;
+}
+.foo-left ul,.foo-right ul{
+	display:block;
+	width:400px;
+	height:100px;
+	border-top:2px solid rgb(230,230,230);
+	border-bottom:2px solid rgb(230,230,230);
+	list-style:none;
+	margin:10px 0 0 40px;
+}
+.foo-left li,.foo-right li{
+	width:80px;
+	height:80px;
+	margin:10px 0 10px 15px;
+	float:left;
+}
+.foo-left li>div{
+	width:100%;
+	height:100%;
+	border-radius:50%;
+	text-align:center;
+	line-height:80px;
+	color:white;
+	font-weight:bold;
+}
+.s-1{
+	background-color:rgb(48,57,125);
+}
+.s-2{
+	background-color:rgb(89,66,33);
+}
+.s-3{
+	background-color:rgb(23,42,24);
+}
+.s-4{
+	background-color:rgb(102,210,243);
+}
+.foo-right li>div{
+	width:50px;
+	height:50px;
+	margin:10px 15px 0 15px;
+	background-image:url(../images/passions.jpg);
+	background-repeat:no-repeat;
+}
+.foo-right p{
+	font-size:0.75rem;
+	color:rgb(150,150,150);
+	text-align:center;
+}
+.p-1{
+	background-position:0 0;
+}
+.p-2{
+	background-position:-100px 0;
+}
+.p-3{
+	background-position:-200px 0;
+}
+.p-4{
+	background-position:-300px 0;
+}

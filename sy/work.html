@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+	<title>work</title>
+	<link rel="stylesheet" type="text/css" href="styles/reuse.css"/>
+	<link rel="stylesheet" type="text/css" href="styles/work.css"/>
+  </head>
+  <body>
+    <div class="left-side">
+	  <div class="left-top">
+	    <canvas width="100px" height="100px" style="margin:24px" id="myClock">your browers is not support canvas!</canvas>
+	  </div>
+	  <ul>
+	    <li><a href="index.html">HOME</a></li>
+	    <li><a href="resume.html">RESUME</a></li>
+	    <li><a href="work.html" id="page-now">WORKS</a></li>
+	    <li><a href="contact.html">CONTACT</a></li>
+	  </ul>
+	  <img src="images/wechat.jpeg"/>
+	  <ul class="link-ul">
+	    <li>LINK</li>
+	    <li><a target="_blank" href="http://www.github.com/Scorain">GITHUB</a></li>
+	  </ul>
+	</div>
+	<div class="right-side">
+	  <div class="work-title">
+	    <img src="images/sprites.png"/>
+	  </div>
+	  <div class="work-li">
+	    <ul>
+		  <li><a target="_blank" href="http://scorain.github.io/suny"><img src="images/works1.jpg"/></a></li>
+		  <li><a target="_blank" href="http://scorain.github.io/formax/"><img src="images/works2.jpg"/></a></li>
+		  <li><a target="_blank" href="http://scorain.github.io/formax/p2p.html"><img src="images/works3.jpg"/></a></li>
+		  <li><a target="_blank" href="http://scorain.github.io/formax/stock.html"><img src="images/works4.jpg"/></a></li>
+		  <li><a target="_blank" href="http://scorain.github.io/mi"><img src="images/works5.jpg"/></a></li>
+		  <li><a target="_blank" href="http://scorain.github.io"><img src="images/works6.jpg"/></a></li>
+		  <li><a target="_blank" href="http://scorain.github.io/jd"><img src="images/works7.jpg"/></a></li>
+		  <li><a target="_blank" href="http://scorain.github.io/calculator"><img src="images/works8.jpg"/></a></li>
+		</ul>
+	    
+	  </div>
+	</div>
+  </body>
+  <script>
+    (function(){
+	    var leftSide=document.getElementsByClassName("left-side")[0];
+	    leftSide.style.height=window.innerHeight+"px";
+	    window.onresize=function(){
+	    	leftSide.style.height=window.innerHeight+"px";
+	    };	
+	})();
+  </script>
+  <script src="scripts/main.js"></script>
+  
+</html>

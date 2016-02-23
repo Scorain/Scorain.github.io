@@ -1,0 +1,64 @@
+
+.ditu{
+	width:88%;
+	max-width:1200px;
+	min-width:600px;
+	height:500px;
+	margin-left:70px;
+}
+
+.work-title{
+	width:100%;
+	height:200px;
+	position:relative;
+}
+.work-title img{
+	width:240px;
+	height:80px;
+	position:absolute;
+	top:70px;
+	left:0;
+	animation:worksShow 2s forwards;
+	-moz-animation:worksShow 2s forwards;
+	-webkit-animation:worksShow 2s forwards;
+	-o-animation:worksShow 2s forwards;
+}
+@keyframes worksShow{
+	0% {left:0;opacity:0}
+	50% {left:0;opacity:0}
+	100% {left:90px;opacity:1}
+}
+@-moz-keyframes worksShow{
+	0% {left:0;opacity:0}
+	50% {left:0;opacity:0}
+	100% {left:90px;opacity:1}
+}
+@-webkit-keyframes worksShow{
+	0% {left:0;opacity:0}
+	50% {left:0;opacity:0}
+	100% {left:90px;opacity:1}
+}
+@-o-keyframes worksShow{
+	0% {left:0;opacity:0}
+	50% {left:0;opacity:0}
+	100% {left:90px;opacity:1}
+}
+.contact-mess{
+	width:50%;
+	min-width:550px;
+	height:180px;
+	margin:50px auto auto 70px;
+}
+.right-side h1{
+	line-height:80px;
+}
+.right-side p{
+	line-height:30px;
+	float:left;
+	width:45%;
+	min-width:270px;
+}
+.right-side span{
+	color:red;
+	margin-right:20px;
+}
