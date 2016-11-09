@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SUI demo</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+
+</head>
+<body>
+<div class="page-group">
+
+    <div class="page page-current" id="index-page">
+        <header class="bar bar-nav">
+            <a class="icon icon-me pull-left open-panel"></a>
+            <h1 class="title">组件导航</h1>
+        </header>
+        <div class="content">
+            <div class="content-padded">
+                <div class="card">
+                    <div class="card-header">第一类</div>
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <div class="row content-padded">
+                                <div class="col-50"><a href="#tab-component" class="button button-round">tab</a></div>
+                                <div class="col-50"><a href="#tabtools-component" class="button button-round">tabtool</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">第二类</div>
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <div class="row content-padded">
+                                <div class="col-50"><a href="#button-component" class="button button-round">button</a></div>
+                                <div class="col-50"><a href="#searchbox-component" class="button button-round">searchbox</a></div>
+                            </div>
+                            <div class="row content-padded">
+                                <div class="col-50"><a href="#form-component" class="button button-round">form</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">第三类</div>
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <div class="row content-padded">
+                                <div class="col-33"><a href="#toast-component" class="button button-round">toast</a></div>
+                                <div class="col-33"><a href="#popup-component" class="button button-round">popup</a></div>
+                                <div class="col-33"><a href="#alert-component" class="button button-round">alert</a></div>
+                            </div>
+                            <div class="row content-padded">
+                                <div class="col-33"><a href="#preloader-component" class="button button-round">preloader</a></div>
+                                <div class="col-33"><a href="#panel-component" class="button button-round">panel</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div><!--end of index-page-->
+
+    <div class="page" id="tab-component">
+        <header class="bar bar-nav">
+            <h1 class="title">tab</h1>
+        </header>
+        <nav class="bar bar-tab">
+            <a href="#" class="tab-item external active">
+                <span class="tab-label">首页</span>
+            </a>
+            <a href="#" class="tab-item external">
+                <span class="tab-label">收藏</span>
+            </a>
+            <a href="#" class="tab-item external">
+                <span class="tab-label">设置</span>
+            </a>
+        </nav>
+        <div class="content">
+            <div class="content-block">hello tabs</div>
+            <a class="button back">back</a>
+        </div>
+    </div><!--end of tabs-->
+
+    <div class="page" id="tabtools-component">
+        <header class="bar bar-nav">
+            <h1 class="title">tab-tools</h1>
+        </header>
+        <nav class="bar bar-tab">
+            <a href="#" class="tab-item external active">
+                <span class="tab-label">文案</span>
+            </a>
+            <a href="#" class="tab-item external">
+                <span class="icon icon-home"></span>
+            </a>
+            <a href="#" class="tab-item external">
+                <span class="icon icon-home"></span>
+                <span class="tab-label">文案</span>
+            </a>
+            <a href="#" class="tab-item external">
+                <span class="icon icon-home"></span>
+                <span class="tab-label">文案</span>
+                <span class="badge">2</span>
+            </a>
+        </nav>
+        <div class="content">
+            <div class="content-block">hello tabtools</div>
+            <a class="button back">back</a>
+        </div>
+    </div><!--end of tabtools-->
+
+    <div class="page" id="button-component">
+        <header class="bar bar-nav">
+            <h1 class="title">button</h1>
+        </header>
+        <div class="content">
+            <div class="content-block">
+                hello button
+                <p><a href="#" class="button">button 1</a></p>
+                <p><a href="#" class="button button-light">button 2</a></p>
+                <p><a href="#" class="button button-dark">button 3</a></p>
+                <p><a href="#" class="button button-success">button 4</a></p>
+                <p><a href="#" class="button button-danger">button 5</a></p>
+                <p><a href="#" class="button button-warning">button 6</a></p>
+                <p><a href="#" class="button disabled">button 7</a></p>
+                <p><a href="#" class="button button-round">button 8</a></p>
+                <p><a href="#" class="button button-big">button 9</a></p>
+                <a class="button back">back</a>
+            </div>
+
+        </div>
+    </div><!--end of button-->
+
+    <div class="page" id="searchbox-component">
+        <header class="bar bar-nav">
+            <h1 class="title">searchbox</h1>
+        </header>
+        <div class="bar bar-header-secondary">
+            <div class="searchbar">
+                <a class="searchbar-cancel">取消</a>
+                <div class="search-input">
+                    <label for="search" class="icon icon-search"></label>
+                    <input type="search" id="search" placeholder="search words..."/>
+                </div>
+            </div><!--end of searchbar-->
+        </div><!--end of second-header-->
+        <div class="content">
+            <div class="content-block">
+                hello searchbox
+                <div class="searchbar row">
+                    <div class="search-input col-80">
+                        <label for="search0"></label>
+                        <input type="search" id="search0" placeholder="searchbox"/>
+                    </div>
+                    <a class="button button-fill button-primary col-20">搜索</a>
+                </div>
+                <a class="button back">back</a>
+            </div>
+
+        </div>
+    </div><!--end of searchbox-->
+
+    <div class="page" id="form-component">
+        <header class="bar bar-nav">
+            <h1 class="title">form</h1>
+        </header>
+        <div class="content">
+            <div class="content-block">
+                hello searchbox
+                <a class="button back">back</a>
+            </div>
+            <div class="list-block">
+                <ul>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-name"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label">姓名</div>
+                                <div class="item-input">
+                                    <input type="text" placeholder="Your Name"/>
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--end of input-text-->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-name"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label">邮箱</div>
+                                <div class="item-input">
+                                    <input type="email" placeholder="Your Email"/>
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--end of input-email-->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-name"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label">密码</div>
+                                <div class="item-input">
+                                    <input type="password" placeholder="Your Password"/>
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--end of input-password-->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label">开关</div>
+                                <div class="item-input">
+                                    <label class="label-switch">
+                                        <input type="checkbox">
+                                        <div class="checkbox"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--end of toggle-->
+                    <li class="">
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label">文本域</div>
+                                <div class="item-input">
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </li><!--end of textarea-->
+                </ul>
+            </div>
+        </div>
+    </div><!--end of form-->
+
+    <div class="page" id="toast-component">
+        <header class="bar bar-nav">
+            <h1 class="title">toast</h1>
+        </header>
+        <div class="content">
+            <div class="content-block">
+                hello toast
+                <a id="e_toast" class="button button-fill">click me</a>
+            </div>
+            <a class="button back">back</a>
+        </div>
+    </div><!--end of toast-->
+
+</div>
+
+
+<div class="panel panel-left panel-reveal">
+    <p>这是一个侧栏</p>
+</div>
+
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+
+<script type='text/javascript' src='suidemo.js'></script>
+</body>
+</html>
