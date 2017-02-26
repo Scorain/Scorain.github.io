@@ -1,0 +1,124 @@
+/*reset*/
+* {
+    margin:0;
+    padding:0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, section {
+    width:100%;
+}
+
+section {
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+
+ul, li {
+    list-style: none;
+}
+
+body {
+    font-size: .16rem;
+    color: #567861;
+}
+
+div.banner {
+    width: 100%;
+    position: relative;
+}
+.main-container {
+    padding-bottom: .8rem;
+}
+.banner img {
+    display: block;
+    width: 100%;
+}
+.banner div.logo, .banner div.share {
+    position: absolute;
+    top: .21rem;
+    background-size: 100% 100%;
+}
+.banner div.logo {
+    width: 2.27rem;
+    height:.4rem;
+    left: .21rem;
+    background: url("images/logo.png") no-repeat;
+    background-size: 100% 100%;
+}
+.banner div.share {
+    width: 1.39rem;
+    height:.55rem;
+    right: .19rem;
+    background: url("images/share.png") no-repeat;
+    background-size: 100% 100%;
+}
+div.main-stock {
+    overflow: hidden;
+}
+div.main-stock p.k-title {
+    margin: .5rem 0;
+    font-size: .32rem;
+    font-weight: bolder;
+    text-align: center;
+}
+div.model {
+    margin-bottom:.6rem;
+    overflow: hidden;
+}
+div.model-top {
+    position: relative;
+}
+div.model-top img{
+    display: block;
+    width: 7.1rem;
+    height: 1.07rem;
+    margin: 0 auto;
+}
+div.model-top p{
+    position: absolute;
+    top: 0.07rem;
+    padding-left: .42rem;
+    height:100%;
+    line-height: 1.07rem;
+    font-size: .3rem;
+    font-weight: bold;
+    color:white;
+}
+div.model ul {
+    width:100%;
+}
+div.model li {
+    float: left;
+    width: 3.38rem;
+    height: 1.47rem;
+    margin: .18rem 0 0 .25rem;
+    padding: .18rem;
+    background-color: white;
+}
+.model-item img {
+    float:right;
+    width:1.1rem;
+    height:1.1rem;
+}
+.model-item-text {
+    height: 100%;
+    overflow: hidden;
+}
+.item-name {
+    font-size: .26rem;
+    font-weight: bolder;
+    color: black;
+}
+.item-code {
+    font-size: .22rem;
+    color: dimgrey;
+}
+.item-desc {
+    padding-top: .12rem;
+    font-size: .2rem;
+    color: grey;
+}
