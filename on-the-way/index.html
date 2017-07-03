@@ -194,6 +194,7 @@
 <div class="page-common page-side page-5">
     <style>
         .page-5 .pic-1 {background-image: url("./images/bg-6.jpg");}
+        .page-5 .pic-2 {background-image: url("./images/bg-7.jpg");}
     </style>
     <div>
         <div class="left-side">
@@ -204,6 +205,7 @@
             <div class="swiper-container" id="swiper-container-2">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><div class="pic-1"></div></div>
+                    <div class="swiper-slide"><div class="pic-2"></div></div>
                 </div>
             </div>
         </div>
@@ -326,19 +328,17 @@
 
     window.onload = function () {
 
+		initSwiper();
         function initSwiper() {
             var swiperContainer = document.getElementsByClassName('swiper-container');
             for (var i = 0, len = swiperContainer.length; i < len; i++) {
                 new Swiper ('#swiper-container-' + i, {
                     direction: 'horizontal',
                     loop: true,
-                    effect : 'cube',
-                    cube: {
-                        slideShadows: true,
-                        shadow: true,
-                        shadowOffset: 100,
-                        shadowScale: 0.6
-                    }
+                    effect : 'fade',
+					fade: {
+					  crossFade: false,
+					}
                 });
             }
         }
