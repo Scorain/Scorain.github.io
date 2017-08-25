@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo-vue官网-教程-实例</title>
+
+    <script src="https://unpkg.com/vue"></script>
+
+    <style>
+        body { padding: 20px; }
+    </style>
+
+</head>
+<body>
+
+<div id="app">
+    {{example}}
+</div>
+
+</body>
+
+<script>
+    var data = {
+        example: 'hello vue'
+    };
+    var vm = new Vue({
+        el: '#app',
+        data: data,
+        beforeCreate: function () {
+            console.log('beforeCreate: \n%s \n', this.example);
+        },
+        created: function () {
+            console.log('created: \n%s \n', this.example);
+        },
+        beforeMount: function () {
+            console.log('beforeMount: \n%s \n', document.querySelector('#app').outerHTML);
+        },
+        mounted: function () {
+            console.log('mounted: \n%s \n', document.querySelector('#app').outerHTML);
+        },
+        beforeUpdate: function () {
+            console.log('beforeUpdate: \n%s \n%s \n', this.example, document.querySelector('#app').outerHTML);
+        },
+        updated: function () {
+            console.log('updated: \n%s \n%s \n', this.example, document.querySelector('#app').outerHTML);
+        },
+        beforeDestory: function () {
+            console.log('beforeDestory');
+        },
+        destoryed: function () {
+            console.log('destoryed');
+        }
+    });
+
+    setTimeout(function () {
+
+        vm.example = 'update once';
+
+        setTimeout(function () {
+
+            /**
+             * TODO: 此处为什么没有触发 'beforeDestory' 和 'destoryed' 钩子
+             * */
+            vm.$destroy();
+
+        }, 3000);
+
+    }, 3000);
+
+</script>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo-vue官网-教程-计算属性</title>
+
+    <script src="https://unpkg.com/vue"></script>
+
+    <style>
+        body { padding: 20px; }
+    </style>
+
+</head>
+<body>
+
+<div id="app1">
+    <p>源消息： {{ example }}</p>
+    <p>表达式转变消息： {{ example.split('').reverse().join('') }}</p>
+</div>
+
+<div id="app2">
+    <p>源消息： {{ example }}</p>
+    <p>计算属性消息： {{ computedExample }}</p>
+</div>
+
+<div id="app3">
+    <p>源消息： {{ example }}</p>
+    <p>方法调用消息： {{ methodExample() }}</p>
+</div>
+
+<div id="app4">
+    <p>源消息：<input v-model="example" /> {{ example }}</p>
+    <p>方法调用消息： {{ methodTime() }} - {{ methodExample() }}</p>
+    <p>计算属性消息： {{ computedTime }} - {{ computedExample }}</p>
+</div>
+
+</body>
+
+<script>
+    var vm1 = new Vue({
+        el: '#app1',
+        data: {
+            example: 'hello vue'
+        }
+    });
+
+    var vm2 = new Vue({
+        el: '#app2',
+        data: {
+            example: 'hello vue'
+        },
+        computed: {
+            computedExample: function () {
+                return this.example.split('').reverse().join('');
+            }
+        }
+    });
+
+    var vm3 = new Vue({
+        el: '#app3',
+        data: {
+            example: 'hello vue'
+        },
+        methods: {
+            methodExample: function () {
+                return this.example.split('').reverse().join('');
+            }
+        }
+    });
+
+    var vm4 = new Vue({
+        el: '#app4',
+        data: {
+            example: 'hello vue'
+        },
+        methods: {
+            methodExample: function () {
+                return this.example.split('').reverse().join('');
+            },
+            methodTime: function () {
+                return Date.now();
+            }
+        },
+        computed: {
+            computedExample: function () {
+                return this.example.split('').reverse().join('');
+            },
+            computedTime: function () {
+                return Date.now();
+            }
+        }
+    });
+
+
+</script>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo-vue官网-教程-组件</title>
+
+    <script src="https://unpkg.com/vue"></script>
+
+    <style>
+        body { padding: 20px; }
+    </style>
+
+</head>
+<body>
+
+<div id="app1">
+    <global-component></global-component>
+    <private-component></private-component>
+</div>
+
+<table id="app2">
+    <my-tr></my-tr>
+    <tr is="my-tr"></tr>
+</table>
+
+<div id="app3">
+    <plain-object></plain-object>
+    <plain-object></plain-object>
+    <plain-object></plain-object>
+    <function-wrapper></function-wrapper>
+    <function-wrapper></function-wrapper>
+    <function-wrapper></function-wrapper>
+</div>
+
+<div id="app4">
+    <child message="it is a static message" title="it is a title"></child>
+    <child :message="mess" class="classOne"></child>
+</div>
+
+<div id="app5">
+    <p>counter-one-{{counterOne}}</p>
+    <p>counter-two-{{counterTwo}}</p>
+    <child gap="1" @inc="incOne"></child>
+    <child gap="3" @inc="incTwo"></child>
+    <child @click.native="nativeClick"></child>
+</div>
+
+</body>
+
+<script>
+
+    /**
+     * example one
+     * 全局注册与局部注册
+     * */
+    Vue.component('global-component', {
+        template: '<p>A global custom component</p>'
+    });
+    var vm1 = new Vue({
+        el: '#app1',
+        components: {
+            'private-component': {
+                template: '<p>A private custom component</p>'
+            }
+        }
+    });
+
+    /**
+     * example two
+     * 以attribute值的形式调用
+     * */
+    var vm2 = new Vue({
+        el: '#app2',
+        components: {
+            'my-tr': {
+                template: '<tr>I am in an ul tag</tr>'
+            }
+        }
+    });
+
+    /**
+     * example three
+     * data必须以函数包装
+     * */
+    var data = {
+        counter: 0
+    };
+    var vm3 = new Vue({
+        el: '#app3',
+        components: {
+            'plain-object': {
+                template: '<button @click="counterInc">{{counter}}</button>',
+                data: function () {
+                    return data;
+                },
+                methods: {
+                    counterInc: function () {
+                        this.counter++;
+                    }
+                }
+            },
+            'function-wrapper': {
+                template: '<button @click="counterInc">{{counter}}</button>',
+                data: function () {
+                    return {
+                        counter: 0
+                    };
+                },
+                methods: {
+                    counterInc: function () {
+                        this.counter++;
+                    }
+                }
+            }
+        }
+    });
+
+    /**
+     * example four
+     * 父向子通讯
+     * */
+    var vm4 = new Vue({
+        el: '#app4',
+        data: {
+            mess: '',
+            syncmess: 'syncmess initilize'
+        },
+        created: function () {
+            var pos = 0;
+            var str = 'i am a increase length string';
+            setInterval((function () {
+                if (pos >= str.length) return;
+                this.mess += str.charAt(pos++);
+            }).bind(this), 1000);
+        },
+        components: {
+            'child': {
+                props: ['message'],
+                template: '<p title="child title" class="classTwo">{{message}}</p>'
+            }
+        }
+    });
+
+    /**
+     * example four
+     * 子向父通讯
+     * */
+    var vm5 = new Vue({
+        el: '#app5',
+        data: {
+            counterOne: 0,
+            counterTwo: 0
+        },
+        methods: {
+            'incOne': function (gap) {
+                this.counterOne += +gap;
+            },
+            'incTwo': function (gap) {
+                this.counterTwo += +gap;
+            },
+            'nativeClick': function () {
+                alert('hello click');
+            }
+        },
+        components: {
+            'child': {
+                props: ['gap'],
+                template: '<p>一次增加{{gap}}</p>',
+                created: function () {
+                    setInterval((function () {
+                        this.$emit('inc', this.gap);
+                    }).bind(this), 1000);
+                }
+            }
+        }
+    });
+
+</script>
+
+</html>
