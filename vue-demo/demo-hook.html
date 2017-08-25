@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo-钩子</title>
+
+    <script src="https://unpkg.com/vue"></script>
+
+    <style>
+        body { padding: 20px; }
+    </style>
+
+</head>
+<body>
+
+<div id="app1">
+    <p v-demo="10"></p>
+    {{message}}
+</div>
+
+</body>
+
+<script>
+    Vue.directive('demo', {
+        bind: function (el, binding) {
+            console.log('directive bind');
+            el.innerHTML = 'directive bind test';
+        },
+        inserted: function () { console.log('directive inserted'); },
+        update: function (el, binding) {
+            console.log('directive update');
+            el.innerHTML = 'directive update test';
+        },
+        componentUpdated: function () { console.log('directive componentUpdated'); }
+    });
+    var app1 = new Vue({
+        el: '#app1',
+        data: {
+            message: 'source code analysis'
+        },
+        beforeCreate: function () { console.log('instance beforeCreate'); },
+        created: function () { console.log('instance created'); },
+        beforeMount: function () { console.log('instance beforeMount'); },
+        mounted: function () { console.log('instance mounted'); },
+        beforeUpdate: function () { console.log('instance beforeUpdate'); },
+        updated: function () { console.log('instance updated'); }
+    });
+    setTimeout(function () {
+        app1.message = 'change it';
+    },3000);
+</script>
+
+</html>
